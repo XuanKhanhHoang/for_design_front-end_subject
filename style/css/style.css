@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #356735;
+}
+.main {
+  padding: 30px !important;
+  background-color: azure;
+}
+.log-img {
+  background-image: url(/resouces/img/ads-login.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.log-btn {
+  background-image: url(/resouces/img/login-img.bmp);
+  background-size: contain;
+  width: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.res_log-text {
+  font-size: 25px;
+  font-weight: 500;
+}
+.explain-text {
+  font-size: 13px;
+  margin-bottom: 1.5rem;
+}
+.id-write,
+.pass-write {
+  width: 75%;
+}
+.id,
+.passw {
+  font-size: 14px;
+  font-weight: 500;
+}
+.line {
+  margin-bottom: 1.5rem;
+}
+.forgot-pass-btn > a {
+  text-decoration: none;
+}
+.hid_background,
+.hid_background-resgis {
+  width: 100%;
+  height: 100%;
+  background-color: #000100;
+  opacity: 0.6;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.success_login,
+.success_resgis {
+  z-index: 1;
+  visibility: hidden;
+  height: 8rem;
+  width: 16rem;
+  background-color: aliceblue;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border: #000100 solid 1px;
+  border-radius: 2px;
+}
+.welcome-text {
+  font-weight: 500;
+  padding-top: 5px;
+}
+.regis-link-btn > a {
+  color: #000100;
+  text-decoration: none;
+}
+.blue-text {
+  color: #2f88db !important;
+  text-decoration: none;
+}
+.regis-link-btn {
+  margin-top: 1rem;
+}
+
+.main-regis {
+  z-index: 3;
+  display: none;
+}
+.main-login {
+  z-index: 1;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.show-background {
+  visibility: visible;
+}
