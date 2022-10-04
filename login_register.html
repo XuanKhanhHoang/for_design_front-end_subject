@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register</title>
+    <link
+      rel="shortcut icon"
+      href="/resouces/img/login-img.bmp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/lib/bootstrap-520/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="/style/css/style.css" />
+    <link rel="stylesheet" href="/style/css/responsive.css" />
+    <script src="/lib/bootstrap-520/js/bootstrap.js"></script>
+    <script src="/lib/jquery/jquery-3.6.2.min.js"></script>
+    <script src="/lib/jquery/js.cookie.js"></script>
+    <script src="/style/js/main_js.js"></script>
+
+    <script>
+      //load default data
+      $(document).ready(function () {
+        $("#email").val(Cookies.get("user"));
+        $("#pwd").val(Cookies.get("password"));
+      });
+    </script>
+  </head>
+  <body>
+    <div class="hid_background" onclick="hiddent"></div>
+    <div class="success_login">
+      <p class="welcome-text"></p>
+      <button
+        class="btn btn-success back-btn"
+        style="height: 22%; width: 30%; font-size: 12px; padding: 1px"
+        onclick="hiddent()"
+        ;
+      >
+        Về trang chủ
+      </button>
+    </div>
+    <div class="container main main-login">
+      <p class="res_log-text">Đăng Nhập</p>
+      <div class="main_log">
+        <div class="row">
+          <div class="main_log-form col-sm-12 col-md-6">
+            <h5 class="explain-text">
+              Vui lòng đăng nhập để nhận nhiều ưu đãi dành riêng cho thành viên.
+            </h5>
+            <div class="row justify-content-around" style="margin-bottom: 2rem">
+              <div class="form-main col-9">
+                <div class="row line space">
+                  <p class="id col-3">Email</p>
+                  <input
+                    class="col-9 form-control form-control-sm id-write"
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="Vui long nhap dia chi email"
+                    aria-label=".form-control-sm example"
+                  />
+                  <div class="invalid-feedback invalid-feedback-email">
+                    Vui lòng kiểm tra lại email của bạn
+                  </div>
+                </div>
+                <div class="row space">
+                  <p class="passw col-3">Mật khẩu</p>
+                  <input
+                    class="col-9 form-control form-control-sm pass-write"
+                    type="password"
+                    required
+                    aria-label=".form-control-sm example"
+                    id="pwd"
+                  />
+                  <div class="invalid-feedback invalid-feedback-password">
+                    Mật khẩu không được để trống
+                  </div>
+                </div>
+              </div>
+              <button
+                class="log-btn col-2"
+                type="submit"
+                style="
+                  font-size: 13px;
+                  font-weight: 500;
+                  text-align: center;
+                  text-decoration: none;
+                  color: #fff;
+                  border: none;
+                  background-color: rgba(0, 0, 0, 0);
+                  border-radius: 3px;
+                "
+                onclick="RememberMe(),Login(),validateEmail(),validatePassword()"
+              ></button>
+            </div>
+            <div class="row justify-content-around">
+              <div class="form-check col-5">
+                <input
+                  class="form-check-input"
+                  id="rememberMe"
+                  type="checkbox"
+                  style="margin-left: -6px; margin-right: 9px; cursor: pointer"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Lưu ID
+                </label>
+              </div>
+              <div
+                class="div-line"
+                style="
+                  width: 1px;
+                  height: 16px;
+                  background-color: #002;
+                  padding: 0;
+                  display: table;
+                  margin: auto;
+                  margin-left: 18px;
+                "
+              ></div>
+              <div class="forgot-pass-btn col-5">
+                <a href="/In-developing.html"
+                  ><i class="ti-hand-point-right"></i> Quên mật khẩu</a
+                >
+              </div>
+            </div>
+            <div class="regis-link-btn col-xs-12 col-md-8">
+              <button
+                onclick="appearRegis()"
+                style="border: #002 solid 1px; padding: 0 10px"
+              >
+                <i class="ti-user"></i> Chưa có tài khoản. Đăng kí tại
+                <a class="blue-text"> đây </a>
+              </button>
+            </div>
+          </div>
+          <div class="log-img col-md-6 col-sm-0"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container main main-regis">
+      <div class="hid_background-resgis" onclick="appearLogin()"></div>
+      <div class="success_resgis" style="border-radius: 3px">
+        <p
+          class="nofi-regis-text"
+          style="font-size: 15px; font-weight: 600"
+        ></p>
+        <button
+          class="btn btn-success backToLogin-btn"
+          style="height: 22%; width: 37%; font-size: 12px; padding: 1px"
+          onclick="goIndex()"
+          ;
+        >
+          Về trang chủ
+        </button>
+      </div>
+      <p class="res_log-text">Đăng Kí</p>
+      <h5 class="explain-text">
+        Đăng kí để nhận nhiều ưu đãi dành riêng cho thành viên.
+      </h5>
+      <div class="row justify-content-around" style="margin-bottom: 2rem">
+        <div class="form-main col-md-10 col-xs-10">
+          <div class="row line space">
+            <p class="id col-3">Họ và tên:</p>
+            <input
+              class="col-9 form-control form-control-sm id-write"
+              type="text"
+              id="name"
+              required
+              placeholder="Vui lòng nhập đầy đủ họ tên "
+              aria-label=".form-control-sm example"
+            />
+            <div class="invalid-feedback invalid-feedback-regis-name">
+              Tên không hợp lệ
+            </div>
+          </div>
+          <div class="row line space">
+            <p class="id col-3">Email</p>
+            <input
+              class="col-9 form-control form-control-sm id-write"
+              type="email"
+              id="res_email"
+              required
+              placeholder="Vui lòng nhập địa chỉ email"
+              aria-label=".form-control-sm example"
+            />
+            <div class="invalid-feedback invalid-feedback-res-email">
+              Vui lòng kiểm tra lại email của bạn
+            </div>
+          </div>
+          <div class="row space line">
+            <p class="passw col-3">Mật khẩu</p>
+            <input
+              class="col-9 form-control form-control-sm pass-write"
+              type="password"
+              required
+              aria-label=".form-control-sm example"
+              id="res_pwd"
+            />
+            <div class="invalid-feedback invalid-feedback-res_password">
+              Mật khẩu không được để trống
+            </div>
+          </div>
+          <div class="row space line">
+            <p class="passw col-3">Nhập lại mật khẩu</p>
+            <input
+              class="col-9 form-control form-control-sm pass-write"
+              type="password"
+              required
+              aria-label=".form-control-sm example"
+              id="re_pwd"
+            />
+            <div class="invalid-feedback invalid-feedback-regis-re_password">
+              Mật khẩu không trùng khớp
+            </div>
+          </div>
+          <div class="row space line">
+            <p class="passw col-3">Chọn khu vực rạp</p>
+            <select class="form-select col-9" style="width: 75%">
+              <option selected>Chọn khu vực rap của bạn</option>
+              <option value="1">Quận Ba Đình</option>
+              <option value="2">Quận Hoàn Kiếm</option>
+              <option value="3">Quận Thanh Xuân</option>
+              <option value="4">Quận Cầu Giấy</option>
+              <option value="5">Quận Hoàng Mai</option>
+              <option value="6">Quận Hai Bà Trưng</option>
+            </select>
+          </div>
+          <div class="row space line">
+            <p class="passw col-3">Nhập ngày sinh của bạn</p>
+            <div class="col-xs-7 col-md-8" style="padding: 0; width: 75%">
+              <input id="startDate" class="form-control" type="date" />
+              <span id="startDateSelected"></span>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button
+              class="btn btn-primary regis-btn"
+              onclick="resgis()"
+              ;
+              type="button"
+            >
+              Đăng kí
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
