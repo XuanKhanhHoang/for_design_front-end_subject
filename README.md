@@ -6,7 +6,7 @@ A project for Design Front-end Web Subject
 
 	library: Add to lib folder
 	css file: Add to direction: style/css/
-	javascript file: Add to direction style/js/
+	javascript file: Add to direction: style/js/
 	data : Add to data folder
 	html file: Add to outside
 	
