@@ -12,7 +12,7 @@ A project for Design Front-end Web Subject
 	
 // A note about using file:
 
-	reposive horizontal should be write to : style/css/responsive.css
+	responsive horizontal should be write to : style/css/responsive.css
 	
 //Essential js var :
 
