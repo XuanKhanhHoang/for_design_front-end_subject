@@ -61,7 +61,6 @@ var res_valid = false;
 function validateEmail() {
   let re = /^\S+@\S+\.\S+$/;
   var v = $("#email").val();
-  console.log(gm.test(v));
   if (re.test(v) == false) {
     $(".invalid-feedback-email").addClass("show");
     return false;
