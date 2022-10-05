@@ -2,7 +2,7 @@
 A project for Design Front-end Web Subject
 
 
-// Guid add file :
+// Guide add file :
 
 	library: Add to lib folder
 	css file: Add to direction: style/css/
