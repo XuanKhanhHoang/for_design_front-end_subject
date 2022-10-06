@@ -41,6 +41,7 @@ function resgis() {
     $(".backToLogin-btn").addClass("btn-success");
     $(".backToLogin-btn").text("Tới trang chủ");
     user_using = `${$("#res_email").val()}`;
+    CreatNewUserData();
     appear_hidden_resgis();
   }
 }
@@ -122,7 +123,9 @@ function validateResPassword() {
 
 //checking login data
 var user_using;
+
 function Login() {
+  var userArray = JSON.parse(localStorage.getItem("user_info"));
   $.getJSON("/data/user.json", function (data) {
     $(".hid_background").addClass("show-background");
     $(".success_login").addClass("show-background");
@@ -134,6 +137,18 @@ function Login() {
       ) {
         k = true;
         user_using = `${f.user}`; //User dang su dung
+      }
+    });
+
+    userArray.forEach((element) => {
+      if (
+        element.user == $("#email").val() &&
+        element.password == $("#pwd").val()
+      ) {
+        k = true;
+        user_using = `${$("#email").val()}`;
+        console.log("run");
+        return true; //User dang su dung
       }
     });
     if (k == true) {
@@ -164,11 +179,10 @@ function RememberMe() {
 //Creat New User Data
 function CreatNewUserData() {
   let new_user = {
-    user: "1",
-    // `${$("#res_email").val()}`,
-    password: "2",
-    // `${$("#res_email").val()}`,
+    user: $("#res_email").val(),
+    password: $("#re_pwd").val(),
   };
-  localStorage.setItem("/data/user1.json", JSON.stringify(new_user));
-  //JSON.parse(localStorage.getItem("/data/user1.json"));
+  var userArr = [];
+  userArr.push(new_user);
+  localStorage.setItem("user_info", JSON.stringify(userArr));
 }
