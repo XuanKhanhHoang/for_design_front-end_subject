@@ -17,10 +17,8 @@ function hiddent() {
   }
 }
 function appearRegis() {
-  $(".main-login").addClass("hidden");
-  $(".main-regis").addClass("show");
-  $(".main-login").removeClass("show");
-  $(".main-regis").removeClass("hidden");
+  $(".main-login").hide(300);
+  $(".main-regis").show(1000);
 }
 function appearLogin() {
   if (res_valid == false) {
