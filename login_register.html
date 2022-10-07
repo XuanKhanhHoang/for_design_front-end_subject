@@ -31,6 +31,13 @@
           appearRegis();
         }
       }
+      function showpass() {
+        if ($("#pwd").attr("type") == "text") {
+          $("#pwd").attr("type", "password");
+        } else {
+          $("#pwd").attr("type", "text");
+        }
+      }
     </script>
   </head>
   <body>
@@ -72,13 +79,17 @@
                 </div>
                 <div class="row space">
                   <p class="passw col-3">Mật khẩu</p>
-                  <input
-                    class="col-9 form-control form-control-sm pass-write"
-                    type="password"
-                    required
-                    aria-label=".form-control-sm example"
-                    id="pwd"
-                  />
+                  <div class="password-inp col-9">
+                    <input
+                      class="col-12 form-control form-control-sm pass-write"
+                      type="password"
+                      required
+                      aria-label=".form-control-sm example"
+                      id="pwd"
+                    />
+                    <i class="ti-eye passw-icon" onclick="showpass()"></i>
+                  </div>
+
                   <div class="invalid-feedback invalid-feedback-password">
                     Mật khẩu không được để trống
                   </div>

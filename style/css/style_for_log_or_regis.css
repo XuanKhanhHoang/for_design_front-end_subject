@@ -108,3 +108,21 @@ body {
 .show-background {
   visibility: visible;
 }
+.password-inp {
+  padding: 0;
+  position: relative;
+  margin: 0;
+}
+.pass-write {
+  height: 100%;
+  width: 100%;
+}
+.passw-icon {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  padding: 5%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
