@@ -1,14 +1,3 @@
-/* @media only screen and (max-width: 570px) {
-  .success_login {
-    left: 17% !important;
-  }
-}
-@media only screen and (width: 660px) {
-  .success_login {
-    left: 20% !important;
-  }
-} */
-
 @media only screen and (max-width: 767px) {
   .log-img {
     display: none;
