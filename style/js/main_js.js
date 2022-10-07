@@ -28,6 +28,7 @@ function appearLogin() {
     $(".main-regis").addClass("hidden");
     $(".main-login").removeClass("hidden");
     $(".main-regis").removeClass("show");
+    window.open("index.html", "_self");
   }
 }
 function resgis() {
@@ -41,12 +42,13 @@ function resgis() {
     $(".backToLogin-btn").addClass("btn-success");
     $(".backToLogin-btn").text("Tới trang chủ");
     user_using = `${$("#res_email").val()}`;
+    console.log(res_valid);
     CreatNewUserData();
     appear_hidden_resgis();
   }
 }
 function goIndex() {
-  window.open("index.html");
+  window.open("index.html", "_self");
 }
 function appear_hidden_resgis() {
   $(".hid_background-resgis").addClass("show-background");
@@ -76,6 +78,7 @@ function validatePassword() {
 function validateResEmail() {
   var re = /^\S+@\S+\.\S+$/;
   var v = $("#res_email").val();
+  console.log(res_valid);
   if (re.test(v) == false) {
     $(".invalid-feedback-res-email").addClass("show");
     res_valid = true;
@@ -87,6 +90,7 @@ function validateResEmail() {
   $.Callbacks().add(validateResPassword());
 }
 function validateName() {
+  console.log(res_valid);
   if ($("#name").val().length == 0) {
     $(".invalid-feedback-regis-name").addClass("show");
     res_valid = true;
@@ -98,6 +102,8 @@ function validateName() {
   $.Callbacks().add(validateResEmail());
 }
 function validateRePassword() {
+  console.log(res_valid);
+
   if (
     $("#res_pwd").val() == $("#re_pwd").val() &&
     `${$("#re_pwd").val()}` !== ""
@@ -110,6 +116,7 @@ function validateRePassword() {
   }
 }
 function validateResPassword() {
+  console.log(res_valid);
   if ($("#res_pwd").val().length == 0) {
     $(".invalid-feedback-res_password").addClass("show");
     res_valid = true;
@@ -182,7 +189,7 @@ function CreatNewUserData() {
     user: $("#res_email").val(),
     password: $("#re_pwd").val(),
   };
-  var userArr = [];
+  var userArr = JSON.parse(localStorage.getItem("user_info")) || [];
   userArr.push(new_user);
   localStorage.setItem("user_info", JSON.stringify(userArr));
 }

@@ -25,6 +25,12 @@
         $("#email").val(Cookies.get("user"));
         $("#pwd").val(Cookies.get("password"));
       });
+      function xs_br() {
+        let mQuery = window.matchMedia("(max-width: 415px)");
+        if (mQuery) {
+          appearRegis();
+        }
+      }
     </script>
   </head>
   <body>
@@ -127,14 +133,18 @@
                 >
               </div>
             </div>
-            <div class="regis-link-btn col-xs-12 col-md-8">
-              <button
-                onclick="appearRegis()"
-                style="border: #002 solid 1px; padding: 0 10px"
+            <div class="regis-link-btn col-xs-12 col-12" onclick="xs_br()">
+              <div
+                style="
+                  background-color: rgba(0, 0, 0, 0);
+                  padding: 0 10px;
+                  width: 100%;
+                  text-align: center;
+                "
               >
                 <i class="ti-user"></i> Chưa có tài khoản. Đăng kí tại
-                <a class="blue-text"> đây </a>
-              </button>
+                <a class="blue-text" onclick="appearRegis()"> đây </a>
+              </div>
             </div>
           </div>
           <div class="log-img col-md-6 col-sm-0"></div>
@@ -239,7 +249,7 @@
           <div class="d-grid gap-2 col-6 mx-auto">
             <button
               class="btn btn-primary regis-btn"
-              onclick="resgis(),CreatNewUserData()"
+              onclick="resgis()"
               ;
               type="button"
             >

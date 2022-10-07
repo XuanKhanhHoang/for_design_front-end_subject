@@ -86,6 +86,7 @@ body {
 .blue-text {
   color: #2f88db !important;
   text-decoration: none;
+  cursor: pointer;
 }
 .regis-link-btn {
   margin-top: 1rem;

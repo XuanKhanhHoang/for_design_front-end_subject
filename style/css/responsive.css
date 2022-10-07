@@ -14,3 +14,9 @@
     display: none;
   }
 }
+@media only screen and (max-width: 415px) {
+  .regis-link-btn > div {
+    border: 1px solid black;
+    cursor: pointer;
+  }
+}
