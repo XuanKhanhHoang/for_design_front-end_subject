@@ -34,8 +34,12 @@
       function showpass() {
         if ($("#pwd").attr("type") == "text") {
           $("#pwd").attr("type", "password");
+          $(".del-icon").addClass("show");
+          $(".del-icon").removeClass("hidden");
         } else {
           $("#pwd").attr("type", "text");
+          $(".del-icon").addClass("hidden");
+          $(".del-icon").removeClass("show");
         }
       }
     </script>
@@ -91,7 +95,9 @@
                       class="ti-eye passw-icon"
                       onclick="showpass()"
                       title="Hiện hoặc ẩn đi mật khẩu"
-                    ></i>
+                    >
+                      <p class="del-icon">/</p>
+                    </i>
                   </div>
 
                   <div class="invalid-feedback invalid-feedback-password">
