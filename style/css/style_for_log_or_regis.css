@@ -4,11 +4,11 @@
   padding: 0;
 }
 body {
-  background-color: #356735;
+  background-color: #001;
 }
 .main {
   padding: 30px !important;
-  background-color: azure;
+  background-color: rgb(255, 255, 255);
 }
 .log-img {
   background-image: url(/resouces/img/ads-login.png);
@@ -105,15 +105,13 @@ body {
 .show {
   display: block;
 }
-.show-background {
-  visibility: visible;
-}
+
 .password-inp {
   padding: 0;
   position: relative;
   margin: 0;
 }
-.pass-write {
+.pass-writee {
   height: 100%;
   width: 100%;
 }
@@ -125,4 +123,7 @@ body {
   padding: 0.6rem;
   transform: translate(50%, -50%);
   cursor: pointer;
+}
+.show-background {
+  visibility: visible;
 }

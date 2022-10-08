@@ -41,7 +41,7 @@
     </script>
   </head>
   <body>
-    <div class="hid_background" onclick="hiddent"></div>
+    <div class="hid_background" onclick="hiddent()"></div>
     <div class="success_login">
       <p class="welcome-text"></p>
       <button
@@ -81,13 +81,17 @@
                   <p class="passw col-3">Mật khẩu</p>
                   <div class="password-inp col-9">
                     <input
-                      class="col-12 form-control form-control-sm pass-write"
+                      class="col-12 form-control form-control-sm pass-writee"
                       type="password"
                       required
                       aria-label=".form-control-sm example"
                       id="pwd"
                     />
-                    <i class="ti-eye passw-icon" onclick="showpass()"></i>
+                    <i
+                      class="ti-eye passw-icon"
+                      onclick="showpass()"
+                      title="Hiện hoặc ẩn đi mật khẩu"
+                    ></i>
                   </div>
 
                   <div class="invalid-feedback invalid-feedback-password">
