@@ -130,7 +130,7 @@ function validateResPassword() {
 var user_using;
 
 function Login() {
-  var userArray = JSON.parse(localStorage.getItem("user_info"));
+  var userArray = JSON.parse(localStorage.getItem("user_info")) || [];
   $.getJSON("/data/user.json", function (data) {
     $(".hid_background").addClass("show-background");
     $(".success_login").addClass("show-background");
@@ -190,4 +190,24 @@ function CreatNewUserData() {
   var userArr = JSON.parse(localStorage.getItem("user_info")) || [];
   userArr.push(new_user);
   localStorage.setItem("user_info", JSON.stringify(userArr));
+}
+
+//boder in small devices
+function xs_br() {
+  let mQuery = window.matchMedia("(max-width: 415px)");
+  if (mQuery == true) {
+    appearRegis();
+  }
+}
+//show/hiden password
+function showpass(id, cls) {
+  if ($(id).attr("type") == "text") {
+    $(id).attr("type", "password");
+    $(cls).addClass("show");
+    $(cls).removeClass("hidden");
+  } else {
+    $(id).attr("type", "text");
+    $(cls).addClass("hidden");
+    $(cls).removeClass("show");
+  }
 }

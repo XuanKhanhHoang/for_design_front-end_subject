@@ -24,24 +24,15 @@
       $(document).ready(function () {
         $("#email").val(Cookies.get("user"));
         $("#pwd").val(Cookies.get("password"));
+        $("#pwd").keyup(function (event) {
+          if (event.keyCode === 13) {
+            RememberMe();
+            Login();
+            validateEmail();
+            validatePassword();
+          }
+        });
       });
-      function xs_br() {
-        let mQuery = window.matchMedia("(max-width: 415px)");
-        if (mQuery == true) {
-          appearRegis();
-        }
-      }
-      function showpass() {
-        if ($("#pwd").attr("type") == "text") {
-          $("#pwd").attr("type", "password");
-          $(".del-icon").addClass("show");
-          $(".del-icon").removeClass("hidden");
-        } else {
-          $("#pwd").attr("type", "text");
-          $(".del-icon").addClass("hidden");
-          $(".del-icon").removeClass("show");
-        }
-      }
     </script>
   </head>
   <body>
@@ -93,7 +84,7 @@
                     />
                     <i
                       class="ti-eye passw-icon"
-                      onclick="showpass()"
+                      onclick="showpass('#pwd','.del-icon')"
                       title="Hiện hoặc ẩn đi mật khẩu"
                     >
                       <p class="del-icon">/</p>
@@ -224,26 +215,48 @@
           </div>
           <div class="row space line">
             <p class="passw col-3">Mật khẩu</p>
-            <input
-              class="col-9 form-control form-control-sm pass-write"
-              type="password"
-              required
-              aria-label=".form-control-sm example"
-              id="res_pwd"
-            />
+
+            <div class="password-inp col-9">
+              <input
+                class="col-12 form-control form-control-sm"
+                type="password"
+                required
+                aria-label=".form-control-sm example"
+                id="res_pwd"
+                style="height: 100%"
+              />
+              <i
+                class="ti-eye passw-icon"
+                onclick="showpass('#res_pwd','.del-icon_1')"
+                title="Hiện hoặc ẩn đi mật khẩu"
+              >
+                <p class="del-icon_1">/</p>
+              </i>
+            </div>
+
             <div class="invalid-feedback invalid-feedback-res_password">
               Mật khẩu không được để trống !
             </div>
           </div>
           <div class="row space line">
             <p class="passw col-3">Nhập lại mật khẩu</p>
-            <input
-              class="col-9 form-control form-control-sm pass-write"
-              type="password"
-              required
-              aria-label=".form-control-sm example"
-              id="re_pwd"
-            />
+            <div class="password-inp col-9">
+              <input
+                class="col-12 form-control form-control-sm"
+                type="password"
+                required
+                aria-label=".form-control-sm example"
+                id="re_pwd"
+                style="height: 100%"
+              />
+              <i
+                class="ti-eye passw-icon"
+                onclick="showpass('#re_pwd','.del-icon_2')"
+                title="Hiện hoặc ẩn đi mật khẩu"
+              >
+                <p class="del-icon_2">/</p>
+              </i>
+            </div>
             <div class="invalid-feedback invalid-feedback-regis-re_password">
               Mật khẩu không trùng khớp
             </div>
