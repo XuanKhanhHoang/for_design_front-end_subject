@@ -9,4 +9,10 @@
     cursor: pointer;
     border-radius: 5px;
   }
+  .back_to_login {
+    padding: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
 }

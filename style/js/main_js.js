@@ -20,6 +20,10 @@ function appearRegis() {
   $(".main-login").hide(300);
   $(".main-regis").show(1000);
 }
+function appearLoginy() {
+  $(".main-regis").hide(300);
+  $(".main-login").show(1000);
+}
 function appearLogin() {
   if (res_valid == false) {
     $(".main-login").addClass("show");
