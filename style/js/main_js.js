@@ -192,9 +192,9 @@ function CreatNewUserData() {
   localStorage.setItem("user_info", JSON.stringify(userArr));
 }
 
-//boder in small devices
+//click all block in small devices
 function xs_br() {
-  let mQuery = window.matchMedia("(max-width: 415px)");
+  let mQuery = $(window).width() < 415;
   if (mQuery == true) {
     appearRegis();
   }
