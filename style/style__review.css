@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.selecter-child {
+  width: max-content;
+}
+
+.tittle__film h3 span {
+  border-bottom: 2px solid rgb(219, 112, 147);
+}
+
+.tittle__film{
+  margin-top: 10px;
+}
+
+.movieofmonth .item-thumb a img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movieofmonth {
+  display: table;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.movieofmonth h5 a {
+  line-height: 22px;
+  color: #43464b;
+  text-decoration: none;
+}
+
+.movieofmonth h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+  max-width: 100%;
+}
+
+.movieofmonth {
+  display: flex;
+  width: 100%;
+}
+
+.noidung {
+  margin-left: 15px;
+}
+
+.suggestion-all h3 span {
+  border-bottom: 2px solid rgb(219, 112, 147);
+}
+
+.suggestion {
+  position: relative;
+  width: 100%;
+}
+
+.suggestion-choice{
+    background-color: black;
+}
+.suggestion-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.suggestion:hover .suggestion-img {
+  opacity: 0.3;
+}
+
+.suggestion:hover .middle {
+  opacity: 1;
+}
+
+.muave {
+  border: 2px solid gray;
+  padding: 10px 20px;
+}
+
+.muave a {
+  text-decoration: none;
+  color: white;
+}
+
+.muave:hover {
+  border: 2px solid black;
+  background-color: black;
+}
+
+.muave:hover a {
+  color: white;
+}
+
+.xemthem
+{
+    border: 2px solid gray;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+.xemthem a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.xemthem:hover{
+    border: none;
+  background-color: rgb(219, 112, 147);
+}
+
+.xemthem:hover a
+{
+    color: white;
+}
+
+.next-page-bar-position
+{
+  text-align: right;
+  margin-top: 50px;
+}
+
+.next-page-bar
+{
+  display: inline-block;
+}
+
+.next-page-bar a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  font-size: 20;
+}
+
+.next-page-bar a.active {
+  background-color: #000000;
+  color: white;
+}
+.next-page-bar a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+
+@media screen and (max-width: 360px){
+  .noidung a{
+    font-size: 0.65em;
+  }
+}
