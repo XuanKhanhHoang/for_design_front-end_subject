@@ -203,6 +203,13 @@ function xs_br() {
     appearRegis();
   }
 }
+function xs_br_regis() {
+  let mQuery = $(window).width() < 415;
+  if (mQuery == true) {
+    appearLoginy();
+  }
+}
+
 //show/hiden password
 function showpass(id, cls) {
   if ($(id).attr("type") == "text") {
@@ -215,3 +222,12 @@ function showpass(id, cls) {
     $(cls).removeClass("show");
   }
 }
+//sync enter key
+$("#pwd").keyup(function (event) {
+  if (event.keyCode === 13) {
+    RememberMe();
+    Login();
+    validateEmail();
+    validatePassword();
+  }
+});

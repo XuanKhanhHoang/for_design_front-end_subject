@@ -24,14 +24,6 @@
       $(document).ready(function () {
         $("#email").val(Cookies.get("user"));
         $("#pwd").val(Cookies.get("password"));
-        $("#pwd").keyup(function (event) {
-          if (event.keyCode === 13) {
-            RememberMe();
-            Login();
-            validateEmail();
-            validatePassword();
-          }
-        });
       });
     </script>
   </head>
@@ -290,7 +282,7 @@
               Đăng kí
             </button>
           </div>
-          <p class="back_to_login text-center m-4">
+          <p class="back_to_login text-center m-4" onclick="xs_br_regis()">
             Bạn đã có tài khoản.
             <a class="blue-text" onclick="appearLoginy()">Quay lại đăng nhập</a>
           </p>
