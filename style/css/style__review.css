@@ -172,4 +172,22 @@
   .noidung a{
     font-size: 0.65em;
   }
+
+  .movieofmonth .item-thumb a img {
+    width: 180px;
+    height: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) and (min-width:360px){
+  .noidung a{
+    font-size: 0.85em;
+  }
+
+  .movieofmonth .item-thumb a img {
+    width: 200px;
+    height: auto;
+    display: block;
+  }
 }
