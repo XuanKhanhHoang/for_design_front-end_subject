@@ -115,7 +115,7 @@
   color: white;
 }
 
-.xemthe
+.xemthem
 {
     border: 2px solid gray;
     padding: 10px 20px;
@@ -168,7 +168,7 @@
 }
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) and (min-width:320px){
   .noidung a{
     font-size: 0.65em;
   }
@@ -187,6 +187,21 @@
 
   .movieofmonth .item-thumb a img {
     width: 200px;
+    height: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .movieofmonth{
+    display:initial ;
+  }
+
+  .noidung{
+    margin: 0;
+  }
+  .movieofmonth .item-thumb a img {
+    width: 100%;
     height: auto;
     display: block;
   }
