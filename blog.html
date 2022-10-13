@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="/lib/bootstrap-520/css/bootstrap.css" />
+
     <link rel="stylesheet" href="lib/bootstrap-5.2.1-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="/lib/themify-icons/themify-icons.css" />
-    <link rel="stylesheet" href="style/css/style__header__footer.css" />
-    <link rel="stylesheet" href="style/css/style__review__blog.css" />
-  </head>
 
-  <style>
+    <link rel="stylesheet" href="style/css/style__review__blog.css" />
+    <link rel="stylesheet" href="/lib/bootstrap-520/css/bootstrap.css" />
+    <link rel="stylesheet" href="style/css/css__header_.css" />
+  </head>
+  <script src="/style/js/main_js.js"></script>
+  <!-- <style>
     .logo_header {
       background-image: url(/resouces/img/logog.png);
       background-size: contain;
@@ -52,7 +54,82 @@
       right: 2%;
       padding: 0.3rem;
     }
+    .menu-icon {
+      cursor: pointer;
+      padding: 5px;
+      width: 47px;
+      margin-left: 1rem;
+    }
+    .login-btn-nav {
+      /* max-width: 30%; */
+      overflow: hidden;
+      padding: 10px;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      width: 10rem;
+    }
+    .col-2_4 {
+      width: 20%;
+    }
+    .btn-link-nav {
+      margin-top: 5px;
+      border-radius: 0%;
+      border: none;
+    }
+    .search-box-menu {
+      margin-top: 1rem;
+      width: 65%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-bottom: 1rem;
+    }
+    .links-menu {
+      display: block;
+      text-decoration: none;
+      color: #000000;
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      opacity: 0.9;
+    }
+    .menu-icon-close {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .menu-list-md_sm-appear {
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+    .menu-list-md_sm-disapppear {
+      transition: height 0s, opacity 0s;
+    }
   </style>
+  <script>
+    function setmenu(a, b) {
+      document.getElementsByClassName("menu-list-md_sm")[0].style.opacity = a;
+      document.getElementsByClassName("menu-list-md_sm")[0].style.height = b;
+    }
+    function menu(a, b, c) {
+      if (c == 1) {
+        document
+          .getElementsByClassName("menu-list-md_sm")[0]
+          .classList.add("menu-list-md_sm-appear");
+        document
+          .getElementsByClassName("menu-list-md_sm")[0]
+          .classList.remove("menu-list-md_sm-disapppear");
+        document.getElementsByTagName("nav")[0].style.display = "none";
+      } else {
+        document
+          .getElementsByClassName("menu-list-md_sm")[0]
+          .classList.remove("menu-list-md_sm-appear");
+        document
+          .getElementsByClassName("menu-list-md_sm")[0]
+          .classList.add("menu-list-md_sm-disapppear");
+        document.getElementsByTagName("nav")[0].style.display = "block";
+      }
+      setInterval(setmenu(a, b), 50);
+    }
+  </script> -->
   <body>
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
@@ -77,42 +154,61 @@
         </div>
       </div>
     </header>
-
-    <!-- <div class=" top-container ">
-      <div class="logo center ">
-          <a href="main.html"><img src="https://cdn-icons-png.flaticon.com/128/1146/1146245.png " alt="space "></a>
-          <a href="main.html">
-              <p>SPACE CINEMA</p>
-          </a>
+    <nav style="width: 100%; background-color: #000000">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="menu-icon d-lg-none" onclick="menu(1,'auto',1,setmenu)">
+            <i class="ti-menu" style="font-size: 2rem; color: #fff"></i>
+          </div>
+          <div class="login-btn-nav btn btn-outline-light d-lg-none">
+            Đăng nhập
+          </div>
+          <div
+            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+          >
+            Phim
+          </div>
+          <div
+            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+          >
+            Mua vé
+          </div>
+          <div
+            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+          >
+            News
+          </div>
+          <div
+            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+          >
+            Khuyến mãi
+          </div>
+          <div
+            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+          >
+            Promotion
+          </div>
+        </div>
       </div>
-      <div class="input center">
-          <form action="">
-              <input class="input1" type="text " placeholder=" Films,actors,...">
-          </form>
+    </nav>
+    <div class="container menu-list-md_sm" style="height: 0; opacity: 0">
+      <div class="sm-menu col-12" style="padding: 15px">
+        <i class="ti-close menu-icon-close" onclick="menu(0,0,0,setmenu)"></i>
+        <div class="con search-box-menu">
+          <input
+            placeholder="Tìm tên phim, diễn viên..."
+            class="search-box form-control-sm"
+            type="text"
+            name="search"
+          />
+          <i class="ti-search"></i>
+        </div>
+        <a href="" class="links-menu"> Phim </a>
+        <a href="" class="links-menu"> Mua vé </a>
+        <a href="" class="links-menu"> News </a>
+        <a href="" class="links-menu"> Khuyến mãi </a>
+        <a href="" class="links-menu"> Promotion </a>
       </div>
-      <div class="user-nav">
-          <a href="#">sign in</a>
-      </div>
-  </div> -->
-
-    <div class="nav-bar">
-      <ul>
-        <li>
-          <a href="#" class="links">films</a>
-        </li>
-        <li>
-          <a href="#" class="links">booking</a>
-        </li>
-        <li>
-          <a href="#" class="links">news</a>
-        </li>
-        <li>
-          <a href="#" class="links">events</a>
-        </li>
-        <li>
-          <a href="#" class="links">promos</a>
-        </li>
-      </ul>
     </div>
     <div class="container">
       <div class="row">
@@ -432,7 +528,7 @@
         </div>
       </div>
     </div>
-    <div class="ending">
+    <!-- <div class="ending">
       <div class="footer-header">
         <div class="movies">
           <h2>movies</h2>
@@ -556,7 +652,7 @@
             >
           </p>
         </div>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
   </body>
 </html>

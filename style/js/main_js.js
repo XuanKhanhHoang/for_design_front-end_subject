@@ -1,3 +1,31 @@
+//js for header
+{
+  function setmenu(a, b) {
+    document.getElementsByClassName("menu-list-md_sm")[0].style.opacity = a;
+    document.getElementsByClassName("menu-list-md_sm")[0].style.height = b;
+  }
+  function menu(a, b, c) {
+    if (c == 1) {
+      document
+        .getElementsByClassName("menu-list-md_sm")[0]
+        .classList.add("menu-list-md_sm-appear");
+      document
+        .getElementsByClassName("menu-list-md_sm")[0]
+        .classList.remove("menu-list-md_sm-disapppear");
+      document.getElementsByTagName("nav")[0].style.display = "none";
+    } else {
+      document
+        .getElementsByClassName("menu-list-md_sm")[0]
+        .classList.remove("menu-list-md_sm-appear");
+      document
+        .getElementsByClassName("menu-list-md_sm")[0]
+        .classList.add("menu-list-md_sm-disapppear");
+      document.getElementsByTagName("nav")[0].style.display = "block";
+    }
+    setInterval(setmenu(a, b), 50);
+  }
+}
+
 //date picker
 {
   let startDate = document.getElementById("bornDate");
