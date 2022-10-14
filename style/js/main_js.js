@@ -13,6 +13,9 @@
         .getElementsByClassName("menu-list-md_sm")[0]
         .classList.remove("menu-list-md_sm-disapppear");
       document.getElementsByTagName("nav")[0].style.display = "none";
+      document
+        .getElementsByClassName("sm-menu")[0]
+        .classList.add("showing-background");
     } else {
       document
         .getElementsByClassName("menu-list-md_sm")[0]
@@ -21,6 +24,9 @@
         .getElementsByClassName("menu-list-md_sm")[0]
         .classList.add("menu-list-md_sm-disapppear");
       document.getElementsByTagName("nav")[0].style.display = "block";
+      document
+        .getElementsByClassName("sm-menu")[0]
+        .classList.remove("showing-background");
     }
     setInterval(setmenu(a, b), 50);
   }
