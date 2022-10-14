@@ -3,12 +3,32 @@
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-width: 767px) {
+  .log-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .regis-link-btn > div {
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .back_to_login {
+    padding: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
 body {
-  background-color: #001;
+  background-color: #000000;
 }
 .main {
   padding: 30px !important;
   background-color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .log-img {
   background-image: url(/resouces/img/ads-login.png);
