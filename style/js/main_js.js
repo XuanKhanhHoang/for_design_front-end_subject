@@ -25,7 +25,12 @@
     setInterval(setmenu(a, b), 50);
   }
 }
-
+//js for footer
+{
+  function golinks(e) {
+    window.open(e);
+  }
+}
 //date picker
 {
   let startDate = document.getElementById("bornDate");
