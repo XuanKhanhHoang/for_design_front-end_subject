@@ -28,7 +28,8 @@
       });
     </script>
   </head>
-  <body>
+  <body onload="check_userusing()">
+    <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
@@ -46,7 +47,9 @@
               </div>
             </div>
           </div>
-          <div class="login-btn-header btn btn-outline-light d-none d-lg-block">
+          <div
+            class="login-btn-header login-btn-user btn btn-outline-light d-none d-lg-block"
+          >
             Đăng nhập
           </div>
         </div>
@@ -58,7 +61,9 @@
           <div class="menu-icon d-lg-none" onclick="menu(1,'auto',1,setmenu)">
             <i class="ti-menu" style="font-size: 2rem; color: #fff"></i>
           </div>
-          <div class="login-btn-nav btn btn-outline-light d-lg-none">
+          <div
+            class="login-btn-nav btn login-btn-user btn-outline-light d-lg-none"
+          >
             Đăng nhập
           </div>
           <div
@@ -111,8 +116,9 @@
         <a href="" class="links-menu"> Promotion </a>
       </div>
     </div>
-    <!-- header -->
+    <!-- /header -->
 
+    <!--login-->
     <div class="hid_background" onclick="hiddent()"></div>
     <div class="success_login">
       <p class="welcome-text"></p>
@@ -240,6 +246,9 @@
         </div>
       </div>
     </div>
+    <!--/login-->
+
+    <!--register-->
     <div class="container main main-regis">
       <div class="hid_background-resgis" onclick="appearLogin()"></div>
       <div class="success_resgis" style="border-radius: 3px">
@@ -374,6 +383,7 @@
         </div>
       </div>
     </div>
+    <!--/register-->
 
     <!-- footer -->
     <footer style="background-color: #000000d6; width: 100%">
@@ -514,5 +524,6 @@
         </div>
       </div>
     </footer>
+    <!--/footer-->
   </body>
 </html>

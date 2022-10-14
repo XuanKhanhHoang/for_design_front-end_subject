@@ -1,3 +1,5 @@
+//All is wrote by HoangXuanKhanh
+
 //js for header
 {
   function setmenu(a, b) {
@@ -30,6 +32,13 @@
     }
     setInterval(setmenu(a, b), 50);
   }
+  function check_userusing() {
+    if (sessionStorage.getItem("user-using") != undefined) {
+      user_using = sessionStorage.getItem("user-using");
+      account_using = user_using.substring(0, user_using.indexOf("@"));
+      $(".login-btn-user").text(`${account_using}`);
+    }
+  }
 }
 //js for footer
 {
@@ -52,7 +61,7 @@ function hiddent() {
     $(".hid_background").removeClass("show-background");
     $(".success_login").removeClass("show-background");
   } else {
-    window.location = "index.html";
+    window.location = "blog.html";
   }
 }
 function appearRegis() {
@@ -211,6 +220,10 @@ function Login() {
       $(".back-btn").text("Quay lai");
       $("back-btn").attr("href", "In-developing.html");
       $(".back-btn").addClass("btn-danger");
+    }
+    if (user_using != undefined) {
+      $(".login-btn-user").text(`${user_using}`);
+      sessionStorage.setItem("user-using", `${user_using}`);
     }
   });
 }

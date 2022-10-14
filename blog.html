@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="style/css/css__header_.css" />
     <link rel="stylesheet" href="/style/css/css__footer.css" />
   </head>
+  <script src="/lib/jquery/jquery-3.6.2.min.js"></script>
+  <script src="/lib/jquery/js.cookie.js"></script>
   <script src="/style/js/main_js.js"></script>
-  <body>
+  <body onload="check_userusing()">
     <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
@@ -32,7 +34,9 @@
               </div>
             </div>
           </div>
-          <div class="login-btn-header btn btn-outline-light d-none d-lg-block">
+          <div
+            class="login-btn-header login-btn-user btn btn-outline-light d-none d-lg-block"
+          >
             Đăng nhập
           </div>
         </div>
@@ -44,7 +48,9 @@
           <div class="menu-icon d-lg-none" onclick="menu(1,'auto',1,setmenu)">
             <i class="ti-menu" style="font-size: 2rem; color: #fff"></i>
           </div>
-          <div class="login-btn-nav btn btn-outline-light d-lg-none">
+          <div
+            class="login-btn-nav btn login-btn-user btn-outline-light d-lg-none"
+          >
             Đăng nhập
           </div>
           <div
