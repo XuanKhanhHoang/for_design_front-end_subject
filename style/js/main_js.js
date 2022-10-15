@@ -204,7 +204,6 @@ function Login() {
       ) {
         k = true;
         user_using = `${$("#email").val()}`;
-        console.log("run");
         return true; //User dang su dung
       }
     });
@@ -222,8 +221,12 @@ function Login() {
       $(".back-btn").addClass("btn-danger");
     }
     if (user_using != undefined) {
-      $(".login-btn-user").text(`${user_using}`);
       sessionStorage.setItem("user-using", `${user_using}`);
+    }
+    if (sessionStorage.getItem("user-using") != undefined) {
+      user_using = sessionStorage.getItem("user-using");
+      account_using = user_using.substring(0, user_using.indexOf("@"));
+      $(".login-btn-user").text(`${account_using}`);
     }
   });
 }
