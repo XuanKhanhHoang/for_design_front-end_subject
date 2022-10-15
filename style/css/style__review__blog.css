@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 .selecter-child {
@@ -14,7 +13,7 @@
   border-bottom: 2px solid rgb(219, 112, 147);
 }
 
-.tittle__film{
+.tittle__film {
   margin-top: 10px;
 }
 
@@ -24,7 +23,7 @@
   display: block;
 }
 
-.text-content p span{
+.text-content p span {
   color: rgb(150, 150, 150);
 }
 
@@ -55,7 +54,9 @@
 .noidung {
   margin-left: 15px;
 }
-
+.suggestion-all {
+  margin-top: 0.5rem !important;
+}
 .suggestion-all h3 span {
   border-bottom: 2px solid rgb(219, 112, 147);
 }
@@ -65,8 +66,8 @@
   width: 100%;
 }
 
-.suggestion-choice{
-    background-color: black;
+.suggestion-choice {
+  background-color: black;
 }
 .suggestion-img {
   opacity: 1;
@@ -115,37 +116,32 @@
   color: white;
 }
 
-.xemthem
-{
-    border: 2px solid gray;
-    padding: 10px 20px;
-    width: max-content;
+.xemthem {
+  border: 2px solid gray;
+  padding: 10px 20px;
+  width: max-content;
 }
 
-.xemthem a
-{
-    text-decoration: none;
-    color: black;
+.xemthem a {
+  text-decoration: none;
+  color: black;
 }
 
-.xemthem:hover{
-    border: none;
+.xemthem:hover {
+  border: none;
   background-color: rgb(219, 112, 147);
 }
 
-.xemthem:hover a
-{
-    color: white;
+.xemthem:hover a {
+  color: white;
 }
 
-.next-page-bar-position
-{
+.next-page-bar-position {
   text-align: right;
   margin-top: 50px;
 }
 
-.next-page-bar
-{
+.next-page-bar {
   display: inline-block;
 }
 
@@ -167,9 +163,8 @@
   background-color: #ddd;
 }
 
-
-@media screen and (max-width: 360px) and (min-width:320px){
-  .noidung a{
+@media screen and (max-width: 360px) and (min-width: 320px) {
+  .noidung a {
     font-size: 0.65em;
   }
 
@@ -180,8 +175,8 @@
   }
 }
 
-@media screen and (max-width: 520px) and (min-width:360px){
-  .noidung a{
+@media screen and (max-width: 520px) and (min-width: 360px) {
+  .noidung a {
     font-size: 0.85em;
   }
 
@@ -192,12 +187,12 @@
   }
 }
 
-@media screen and (max-width: 320px){
-  .movieofmonth{
-    display:initial ;
+@media screen and (max-width: 320px) {
+  .movieofmonth {
+    display: initial;
   }
 
-  .noidung{
+  .noidung {
     margin: 0;
   }
   .movieofmonth .item-thumb a img {
