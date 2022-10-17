@@ -92,13 +92,20 @@ function resgis() {
     $(".backToLogin-btn").addClass("btn-success");
     $(".backToLogin-btn").text("Tới trang chủ");
     user_using = `${$("#res_email").val()}`;
-    console.log(res_valid);
+    if (user_using != undefined) {
+      sessionStorage.setItem("user-using", `${user_using}`);
+    }
+    if (sessionStorage.getItem("user-using") != undefined) {
+      user_using = sessionStorage.getItem("user-using");
+      account_using = user_using.substring(0, user_using.indexOf("@"));
+      $(".login-btn-user").text(`${account_using}`);
+    }
     CreatNewUserData();
     appear_hidden_resgis();
   }
 }
 function goIndex() {
-  window.open("index.html", "_self");
+  window.open("blog.html", "_self");
 }
 function appear_hidden_resgis() {
   $(".hid_background-resgis").addClass("show-background");
