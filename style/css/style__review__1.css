@@ -218,8 +218,22 @@
   color: white;
 }
 
+.recommended-link ul li a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.recommended-link ul li a:hover{
+  text-decoration: none;
+  color: rgb(219, 112, 147);
+  transition: 0.5s;
+  
+}
+
 .recommended-link ul li {
   list-style-type: none;
+  padding-top:4px ;
 }
 .recommended-link ul {
   padding-left: 0;

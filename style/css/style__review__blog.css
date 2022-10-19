@@ -56,7 +56,7 @@
 }
 .suggestion-all {
   margin-top: 0.5rem !important;
-  text-align: center;
+  /* text-align: center; */
 }
 .suggestion-all h3 span {
   border-bottom: 2px solid rgb(219, 112, 147);
