@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #43464b;
+    --primary-color: #f26b38;
+    --border-color: #dddddd;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.view-location {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+
+/* List Film */
+
+.list__content {
+    padding: 12px 0;
+}
+
+.film__item {
+    margin: 24px 0;
+}
+
+.film__link {
+    text-decoration: none;
+}
+
+.film__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.film__action {
+    position: relative;
+}
+
+.film__action:hover .film__content {
+    display: flex;
+    cursor: pointer;
+}
+
+.film__booking {
+    text-decoration: none;
+}
+
+.film__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: FadeIn ease-in-out 0.2s;
+}
+
+.booking-btn {
+    padding: 16px 24px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    animation: FadeIn ease 0.1s;
+}
+
+.booking-btn:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.name-eng, .name-vn {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.name-eng {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 400;
+    padding-top: 6px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.name-vn {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 400;
+    opacity: 0.8;
+    padding-top: 6px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+@keyframes Growth {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+

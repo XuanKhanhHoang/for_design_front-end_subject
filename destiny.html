@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-520/css/bootstrap.css">
+    <link rel="stylesheet" href="./style/css/reset.css">
+    <link rel="stylesheet" href="style/css/css__header_.css" />
+    <link rel="stylesheet" href="/style/css/css__footer.css" />
+    <link rel="stylesheet" href="./lib/gridsystem/grid.css">
+    <link rel="stylesheet" href="./style/css/base.css">
+    <link rel="stylesheet" href="./style/css/main2.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+    <script src="/lib/jquery/jquery-3.6.2.min.js"></script>
+    <script src="/lib/jquery/js.cookie.js"></script>
+    <script src="/style/js/main_js.js"></script>
+    <script src="./lib/bootstrap-520/js/bootstrap.js"></script>
+    <title>Document</title>
+</head>
+<body onclick="check_userusing()">
+    <div class="main">
+
+        <header style="background-color: #000000">
+            <div class="container" style="position: relative">
+              <div class="row">
+                <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+                <div class="searchform col-3 d-md-none d-none d-lg-block">
+                  <div class="con1 col-12">
+                    <div class="con col-12">
+                      <input
+                        placeholder="Tìm tên phim, diễn viên..."
+                        class="search-box form-control-sm"
+                        type="text"
+                        name="search"
+                      />
+                      <i class="ti-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="login-btn-header login-btn-user btn btn-outline-light d-none d-lg-block"
+                  onclick="golinks(`login_register.html`)"
+                >
+                  Đăng nhập
+                </div>
+              </div>
+            </div>
+        </header>
+        <nav style="width: 100%; background-color: #000000">
+        <div class="container">
+            <div class="row justify-content-between">
+            <div class="menu-icon d-lg-none" onclick="menu(1,'auto',1,setmenu)">
+                <i class="ti-menu" style="font-size: 2rem; color: #fff"></i>
+            </div>
+            <div
+                class="login-btn-nav btn login-btn-user btn-outline-light d-lg-none"
+                onclick="golinks(`login_register.html`)"
+            >
+                Đăng nhập
+            </div>
+            <div
+                class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            >
+                Phim
+            </div>
+            <div
+                class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            >
+                Mua vé
+            </div>
+            <div
+                class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            >
+                News
+            </div>
+            <div
+                class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            >
+                Khuyến mãi
+            </div>
+            <div
+                class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            >
+                Promotion
+            </div>
+            </div>
+        </div>
+        </nav>
+        <div
+        class="container menu-list-md_sm"
+        style="height: 0; opacity: 0; background-color: #fff"
+        >
+        <div class="sm-menu col-12" style="padding: 15px">
+            <i class="ti-close menu-icon-close" onclick="menu(0,0,0,setmenu)"></i>
+            <div class="con search-box-menu">
+            <input
+                placeholder="Tìm tên phim, diễn viên..."
+                class="search-box form-control-sm"
+                type="text"
+                name="search"
+            />
+            <i class="ti-search"></i>
+            </div>
+            <a href="" class="links-menu"> Phim </a>
+            <a href="" class="links-menu"> Mua vé </a>
+            <a href="" class="links-menu"> News </a>
+            <a href="" class="links-menu"> Khuyến mãi </a>
+            <a href="" class="links-menu"> Promotion </a>
+        </div>
+        </div>
+
+        <div class="main__container">
+            <div class="grid wide">
+                <div class="col-grid l-12 m-grid-12 c-12">
+                    <ul class="main__path">
+                        <li class="path__link-item">
+                            <a href="" class="homepage non_active">Trang chủ</a>
+                        </li>
+                        <li class="path__link-item">
+                            <a href="" class="booking non_active">Đặt vé</a>
+                        </li>
+                        <span class="name__film">Love Destiny The Movie</span>
+                    </ul>
+    
+                    <div class="main__content">
+                        <div class="row-grid">
+                            <div class="col-grid l-8 m-grid-8 c-12">
+                                <div class="review-film">
+                                    <div class="row-grid img-and-info">
+                                        <div class="col-grid l-4 m-grid-4 c-12">
+                                            <img src="./resouces/img/destiny.jpg" alt="" class="film__img">
+                                        </div>
+    
+                                        <div class="col-grid l-8 m-grid-8 c-12">
+                                            <div class="name__film strong">Love Destiny The Movie</div>
+    
+                                            <div class="rating">
+                                                <div class="rating__point">
+                                                    3.3<span>/5</span>
+                                                    <div class="rating__amount">1910</div>
+                                                </div>
+    
+                                                <button class="rating__btn">
+                                                    Đánh giá
+    
+                                                    <ul class="rating__action">
+                                                        <li class="rating__star">
+                                                            <i class="fa-regular fa-star rating__icon"></i>
+                                                        </li>
+                                                        <li class="rating__star">
+                                                            <i class="fa-regular fa-star rating__icon"></i>
+                                                        </li>
+                                                        <li class="rating__star">
+                                                            <i class="fa-regular fa-star rating__icon"></i>
+                                                        </li>
+                                                        <li class="rating__star">
+                                                            <i class="fa-regular fa-star rating__icon"></i>
+                                                        </li>
+                                                        <li class="rating__star">
+                                                            <i class="fa-regular fa-star rating__icon"></i>
+                                                        </li>
+                                                    </ul>
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="online__rating">
+                                                <div class="view-location location-no-margin">C19</div>
+                                               
+                                                <span class="time__film">
+                                                    <i class="fa-regular fa-clock time-icon"></i>
+                                                    69 phút
+                                                </span>
+    
+                                                <div class="social">
+                                                    <button class="social-btn">
+                                                        <i class="fa-solid fa-thumbs-up like-icon"></i>
+                                                        <b>Thích</b> 1910
+                                                    </button>
+    
+                                                    <button class="social-btn share">
+                                                        Chia sẻ
+                                                    </button>
+                                                </div>
+                                            </div>
+    
+                                            <div class="info__film">
+                                                <p class="info__desc">
+                                                    <span class="info__title">Quốc gia: </span>
+                                                    Thái Lan
+                                                </p>
+    
+                                                <p class="info__desc">
+                                                    <span class="info__title">Diễn viên: </span>
+                                                    Ranee Campen, Thanavat Vatthanaputi
+                                                </p>
+    
+                                                <p class="info__desc">
+                                                    <span class="info__title">Thể loại: </span>
+                                                    Hài, Lãng mạn, Lịch sử
+                                                </p>
+    
+                                                <p class="info__desc">
+                                                    <span class="info__title">Nhà sản xuất: </span>
+                                                    GHD 559
+                                                </p>
+    
+                                                <p class="info__desc">
+                                                    <span class="info__title">Đạo diễn: </span>
+                                                    Adisorn Tresirikasem
+                                                </p>
+    
+                                                <p class="info__desc">
+                                                    <span class="info__title">Ngày khởi chiếu: </span>
+                                                    9/9/2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="film__pre-content">
+                                        <h3 class="heading">Nội dung phim</h3>
+                                        <div class="pre__content">
+                                            <p class="pre__content-desc">
+                                                Gaysorn (Ranee Campen) - tiểu thư sống ở thời Rattanakosin chính là kiếp sau của Karaket ở triều đại Ayutthaya. Có lẽ bởi vậy mà Gaysorn đã chiếm trọn trái tim của Bhop (Thanavat Vatthanaputi) - cũng là hậu duệ của Dej - ngay từ lần đầu gặp mặt.
+                                                 Chàng kỹ sư tài năng đã luôn mơ về một người con gái có gương mặt giống Gaysorn trong suốt 10 năm qua, và nghĩ rằng cô chính là tri kỉ mà mình đang tìm kiếm.
+                                            </p>
+    
+                                            <p class="pre__content-desc">
+                                                Phim mới <b>Love Destiny The Movie</b> ra mắt các rạp chiếu từ 9/9/2022.
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                                <div class="showstime">
+                                    <h3 class="heading">Lịch chiếu</h3>
+                                    <div class="showstime__select">
+                                        <div class="row-grid">
+                                            <div class="col-grid l-4 m-grid-12 c-12">
+                                                <div class="showstime__location">
+                                                    <select name="location" class="select__location select__box">
+                                                        <option value="Cả nước" class="location-item">Cả Nước</option>
+                                                        <option value="Hà Nội" class="location-item">Hà Nội</option>
+                                                        <option value="Hồ Chí Minh" class="location-item">Hồ Chí Minh</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-grid l-4 m-grid-12 c-12">
+                                                <div class="showstime__date">
+                                                    <input type="date" class="select__date select__box">
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-grid l-4 m-grid-12 c-12">
+                                                <div class="showstime__theater">
+                                                    <select name="location" class="select__theater select__box">
+                                                        <option value="Tất cả rạp" class="location-item">Tất cả rạp</option>
+                                                        <option value="Space X" class="location-item">Space X</option>
+                                                        <option value="Space Y" class="location-item">Space Y</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="theater">
+                                    <div class="spaceX theater__item">
+                                        <div class="name__theater">
+                                            Space X
+                                        </div>
+
+                                        <span class="type__show">
+                                            2D -  Phụ đề
+                                        </span>
+                                        <div class="time__show">
+                                            19:10
+                                        </div>
+                                    </div>
+
+                                    <div class="spaceY theater__item">
+                                        <div class="name__theater">
+                                            Space Y
+                                        </div>
+
+                                        <span class="type__show">
+                                            2D -  Thuyết minh
+                                        </span>
+                                        <div class="time__show">
+                                            19:10
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-grid l-4 m-grid-4 c-0">
+                                <div class="promotion">
+                                    <h3 class="heading">Nhận khuyến mãi</h3>
+                                    <div class="promotion__form">
+                                        <form action="" class="form">
+                                            <input type="email" class="promotion__input" placeholder="Email" required id="">
+                                            <button class="promotion__btn">
+                                                Đăng Ký
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="playing__film">
+                                    <h3 class="heading">Phim đang chiếu</h3>
+                                    <div class="list__content">
+                                        <div class=" list__film row-grid">
+                                            <div class="col-grid l-12 m-grid-12 c-12 film__item">
+                                                <div class="film__action">
+                                                    
+                                                    <img src="./resouces/img/monster-mekong.jpg" alt="Anh" class="film__img">
+                                                    
+                                                    <a href="" class="film__booking">
+                                                        <div class="film__content">
+                                                            <div class="view-location">
+                                                                C19
+                                                            </div>
+            
+                                                            <a href="" class="booking-btn">
+                                                                Mua vé
+                                                            </a>
+                                                        </div>
+                                                    </a>
+            
+                                                </div>
+                                                
+            
+                                                <div class="film__info">
+                                                    <h3 class="name-eng">The Lake</h3>
+                                                    <h3 class="name-vn">Quái vật sông Mekong</h3>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-grid l-12 m-grid-12 c-12 film__item">
+                                                <div class="film__action">
+                                                    
+                                                    <img src="./resouces/img/avatar.jpg" alt="Anh" class="film__img">
+                                                    
+                                                    <a href="" class="film__booking">
+                                                        <div class="film__content">
+                                                            <div class="view-location">
+                                                                C19
+                                                            </div>
+            
+                                                            <a href="" class="booking-btn">
+                                                                Mua vé
+                                                            </a>
+                                                        </div>
+                                                    </a>
+            
+                                                </div>
+                                                
+                                                <div class="film__info">
+                                                    <h3 class="name-eng">Love Destiny The Movie</h3>
+                                                    <h3 class="name-vn">Ngược Dòng Thời Gian Để Yêu Anh</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="./playingmovie.html" class="see-more">
+                                    Xem thêm
+                                </a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</body>
+</html>
