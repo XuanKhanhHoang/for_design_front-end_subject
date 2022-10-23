@@ -15,11 +15,15 @@
   <script src="/lib/jquery/js.cookie.js"></script>
   <script src="/style/js/main_js.js"></script>
 
-  <body>
+  <body onclick="check_userusing()">
+    <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
-          <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+          <div
+            class="logo_header col-sm-12 col-md-12 col-lg-6"
+            onclick="golinkss(`index.html`,`_self`)"
+          ></div>
           <div class="searchform col-3 d-md-none d-none d-lg-block">
             <div class="con1 col-12">
               <div class="con col-12">
@@ -55,35 +59,33 @@
             Đăng nhập
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            class="btn btn-outline-secondary btn-link-nav col-lg-2 d-lg-block d-none"
+            onclick="golinkss(`playingmovie.html`,1)"
           >
             Phim
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
           >
             Mua vé
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`blog.html`,1)"
           >
             Blog điện ảnh
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`review.html`,1)"
           >
             Bình luận phim
           </div>
           <div
             class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-            onclick="golinks(`event.html`)"
+            onclick="golinkss(`event.html`,1)"
           >
             Khuyến mãi
-          </div>
-          <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-          >
-            Promotion
           </div>
         </div>
       </div>
@@ -100,14 +102,15 @@
           />
           <i class="ti-search"></i>
         </div>
-        <a href="" class="links-menu"> Phim </a>
+        <a href="/playingmovie.html" class="links-menu"> Phim </a>
         <a href="" class="links-menu"> Mua vé </a>
-        <a href="" class="links-menu"> Blog điện ảnh </a>
-        <a href="" class="links-menu"> Bình luận phim </a>
-        <a href="" class="links-menu"> Khuyến mãi </a>
-        <a href="" class="links-menu"> Promotion </a>
+        <a href="/blog.html" class="links-menu"> Blog điện ảnh </a>
+        <a href="/review.html" class="links-menu"> Bình luận phim </a>
+        <a href="/event.html" class="links-menu"> Khuyến mãi </a>
       </div>
     </div>
+    <!-- /header -->
+
     <div class="container" style="margin-bottom: 1rem; margin-top: 1rem">
       <div class="row">
         <div class="col-md-8">
@@ -122,25 +125,42 @@
                 <ul>
                   <li>Thời hạn: 14.10.2022 - 31.10.2022</li>
                   <li>Giảm 50k cho đơn hàng từ 51k trở lên.</li>
-                  <li>Hệ thống tự áp dụng khi bạn thỏa mãn điều kiện khách hàng mới</li>
+                  <li>
+                    Hệ thống tự áp dụng khi bạn thỏa mãn điều kiện khách hàng
+                    mới
+                  </li>
                   <li>Số lần áp dụng tối đa 1 lần/1 khách/1 tháng</li>
-                  <li>Áp dụng khi đặt mua tại website và app của Spacecinema</li>
+                  <li>
+                    Áp dụng khi đặt mua tại website và app của Spacecinema
+                  </li>
                 </ul>
               </li>
               <li class="main-content">
                 <span>Dành cho khách hàng thân quen</span>
                 <ul>
                   <li>Hạn sử dụng: 14.10.2022 - 14.12.2022 (3 Tháng)</li>
-                  <li>Nhập mã "XUYENCO", giảm trực tiếp 50%, tối đa 30k cho mọi hóa đơn</li>
+                  <li>
+                    Nhập mã "XUYENCO", giảm trực tiếp 50%, tối đa 30k cho mọi
+                    hóa đơn
+                  </li>
                   <li>Số lần áp dụng tối đa 2 lần/ 1 khách/ 1 tháng</li>
-                  <li>Áp dụng khi đặt mua tại website và app của Spacecinema</li>
+                  <li>
+                    Áp dụng khi đặt mua tại website và app của Spacecinema
+                  </li>
                 </ul>
               </li>
               <li class="main-content">
                 <span>Điều khoản chương trình</span>
                 <ul>
-                  <li>Chương trình sẽ kết thúc khi ngân sách của chương trình hết hoặc vào ngày cuối của chương trình, tùy theo điều kiện nào đến trước</li>
-                  <li>Mọi khiếu nại phải được báo ngay trong vào 30 ngày kể từ ngày phát sinh vấn đề.</li>
+                  <li>
+                    Chương trình sẽ kết thúc khi ngân sách của chương trình hết
+                    hoặc vào ngày cuối của chương trình, tùy theo điều kiện nào
+                    đến trước
+                  </li>
+                  <li>
+                    Mọi khiếu nại phải được báo ngay trong vào 30 ngày kể từ
+                    ngày phát sinh vấn đề.
+                  </li>
                 </ul>
               </li>
               <li class="main-content">
@@ -322,7 +342,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Kẻ săn lùng sợ hãi: Tái sinh
+                      Kẻ săn lùng sợ hãi: Tái sinh
                     </h5>
                   </div>
                 </div>
@@ -357,7 +377,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Ngược Dòng Thời Gian Để Yêu Anh
+                      Ngược Dòng Thời Gian Để Yêu Anh
                     </h5>
                   </div>
                 </div>

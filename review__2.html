@@ -14,11 +14,15 @@
   <script src="/lib/jquery/jquery-3.6.2.min.js"></script>
   <script src="/lib/jquery/js.cookie.js"></script>
   <script src="/style/js/main_js.js"></script>
-  <body>
+  <body onclick="check_userusing()">
+    <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
-          <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+          <div
+            class="logo_header col-sm-12 col-md-12 col-lg-6"
+            onclick="golinkss(`index.html`,`_self`)"
+          ></div>
           <div class="searchform col-3 d-md-none d-none d-lg-block">
             <div class="con1 col-12">
               <div class="con col-12">
@@ -54,35 +58,33 @@
             Đăng nhập
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            class="btn btn-outline-secondary btn-link-nav col-lg-2 d-lg-block d-none"
+            onclick="golinkss(`playingmovie.html`,1)"
           >
             Phim
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
           >
             Mua vé
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`blog.html`,1)"
           >
             Blog điện ảnh
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`review.html`,1)"
           >
             Bình luận phim
           </div>
           <div
             class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-            onclick="golinks(`event.html`)"
+            onclick="golinkss(`event.html`,1)"
           >
             Khuyến mãi
-          </div>
-          <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-          >
-            Promotion
           </div>
         </div>
       </div>
@@ -99,63 +101,137 @@
           />
           <i class="ti-search"></i>
         </div>
-        <a href="" class="links-menu"> Phim </a>
+        <a href="/playingmovie.html" class="links-menu"> Phim </a>
         <a href="" class="links-menu"> Mua vé </a>
-        <a href="" class="links-menu"> Blog điện ảnh </a>
-        <a href="" class="links-menu"> Bình luận phim </a>
-        <a href="" class="links-menu"> Khuyến mãi </a>
-        <a href="" class="links-menu"> Promotion </a>
+        <a href="/blog.html" class="links-menu"> Blog điện ảnh </a>
+        <a href="/review.html" class="links-menu"> Bình luận phim </a>
+        <a href="/event.html" class="links-menu"> Khuyến mãi </a>
       </div>
     </div>
+    <!-- /header -->
+
     <div class="container" style="margin-bottom: 1rem; margin-top: 1rem">
       <div class="row">
         <div class="col-md-8">
           <div class="tittle-web">
-            <h3>
-                [Review] Bullet Train: Brad Pitt Thành John Wick “Số Nhọ”
-            </h3>
+            <h3>[Review] Bullet Train: Brad Pitt Thành John Wick “Số Nhọ”</h3>
           </div>
 
           <div class="web-content">
             <p>
-                Khi lồng ghép cả đám sát thủ điên khùng và chuyến tàu cao cấp đi với tốc độ khủng vào nhau, ta có tác phẩm hành động vừa máu lửa như John Wick vừa gây hài ngang cỡ Deadpool.
+              Khi lồng ghép cả đám sát thủ điên khùng và chuyến tàu cao cấp đi
+              với tốc độ khủng vào nhau, ta có tác phẩm hành động vừa máu lửa
+              như John Wick vừa gây hài ngang cỡ Deadpool.
             </p>
             <p>
-                Giữa giới kiếm cơm bằng mạng người, Ladybug là một trường hợp hết sức kì quái. Gã hay gặp xui xẻo vô cùng. Đi bộ rớt chìa khóa, băng qua đường mém bị xe ủi, đang làm nhiệm vụ thì bị nhảy lầu ngay nóc xe… Lần này, gã lên tàu Tokyo – Kyoto để giao nhận món hàng bí ẩn – chiếc vali có dấu hiệu đặc biệt. 
+              Giữa giới kiếm cơm bằng mạng người, Ladybug là một trường hợp hết
+              sức kì quái. Gã hay gặp xui xẻo vô cùng. Đi bộ rớt chìa khóa, băng
+              qua đường mém bị xe ủi, đang làm nhiệm vụ thì bị nhảy lầu ngay nóc
+              xe… Lần này, gã lên tàu Tokyo – Kyoto để giao nhận món hàng bí ẩn
+              – chiếc vali có dấu hiệu đặc biệt.
             </p>
-            <img src="resouces/img/review-bullet-train-1.jpg" alt="">
+            <img src="resouces/img/review-bullet-train-1.jpg" alt="" />
             <p>
-                Cũng cố ý hoặc vô tình hiện diện trên con tàu cao tốc oan nghiệt là gần chục tên đồng nghiệp với Ladybug từ tứ xứ tề tựu. Mỗi kẻ mỗi mục đích nhưng đều vì lí do nào đó lại chạm mặt và nảy sinh xung đột chết người! Nếu mê mệt Deadpool và John Wick, nhiều khả năng bạn sẽ thích Bullet Train. Lối kể chuyện đầy hài hước, mỗi khung hình đều đậm chất trào phúng và hàng loạt tình tiết không thể đoán trước đưa công chúng đi hết bất ngờ này tới bất ngờ khác tận cuối phim… dễ khiến công chúng liên tưởng đến tác phẩm mang tên gã lắm mồm nhà Marvel. Cùng lúc, những pha xáp lá cà đỉnh cao, sử dụng bất cứ món đồ nào tiện tay vớ lấy rồi xử nhau ngọt xớt vốn là đặc sản hút khán giả ở John Wick. 
-            </p>
-            <p>
-                Cái khó về mặt không gian cũng được xử lí tuyệt hảo. Khác với địa hình đánh nhau rộng rãi của Deadpool hay John Wick, Bullet Train gói gọn tất cả suốt chuyến tàu nhanh. Điều này đòi hỏi đạo diễn David Leitch phải vận dụng tối đa trí tưởng tượng và tài ứng biến để các cảnh hành động thật hợp lí. 
-            </p>
-            <img src="resouces/img/review-bullet-train-2.jpg" alt="">
-            <p>
-                Bullet Train lại mạnh tay sử dụng toàn các mảng màu sặc sỡ. Từ các bảng quảng cáo nổi bật đặc trưng của xứ sở mặt trời mọc tới toa tàu sang trọng đánh đèn ấm áp đủ giúp ngụy trang xác chết thành người say đang ngủ. Trái ngược gã Ladybug chỉ ăn mặc đơn giản: nón bạc màu, kính đen và giày trắng; dàn nhân vật phụ mỗi người mỗi màu, mỗi người một phong cách thời trang.  Nhạc phim cũng rất xuất sắc. Ngay từ lúc mới tung trailer, khán giả đã cười lăn cười bò bởi Stayin’ Alive. Khi vào phim, mọi thứ còn “điên” hơn nữa. Đặc biệt nhất hẳn là trường đoạn dành cho ca khúc kinh điển Five Hundred Miles.
-            </p>
-            <p>
-                Tuy mới vào nghề từ 2021, Zak Olkewicz thành công tạo ra kịch bản hấp dẫn, chặt chẽ và chỉn chu dựa theo tiểu thuyết gốc Isaka Kotaro chắp bút. Gần chục nhân vật quan trọng nhưng mỗi người chẳng bị trôi tuột đi. Cô tiếp viên, ông soát vé hay bà già nghiêm khắc trên chuyến tàu cũng nổi bật. Dù ít ỏi, “văn hóa” Yakuza có màn xuất hiện hoành tráng. Brad Pitt và David Leitch biết nhau hơn hai chục năm. Vị đạo diễn Atomic Blone đóng thế ngôi sao Once Upon A Time… In Hollywood từ Fight Club (1999), Ocean's Eleven (2001), Troy (2004) và Mr. & Mrs. Smith (2005). Pitt cameo Deadpool 2 mà Leitch ngồi ghế đạo diễn. Sự hiểu nhau giữa hai con người bậc nhất phim đã giúp làm nên sự xuất sắc cho Bullet Train.   
-            </p>
-            <p>
-                Có thể nói rằng, sau khi chia tay Angelina Jolie, Brad Pitt mới đạt đến đỉnh cao diễn xuất. Trước kia, Pitt không thiếu phim hay như Fight Club, Se7en, The Curious Case of Benjamin Button, Moneyball… nhưng anh ở Ad Astra hay Once Upon A Time… In Hollywood đã đạt tới tầm khác. Cùng là loại vai, Ladybug thu hút hơn hẳn Mr.Smith. Tentoumushi hơi giống Cliff (Once Upon A Time… In Hollywood) và Jack (The Lost City) nên chẳng hề khó diễn. 
-            </p>
-            <p>
-                Về mặt hành động, Brad Pitt xứng đáng nhận được tràng vỗ tay. Ở tuổi suýt soát 60, Pitt vẫn cống hiến hết mình. 95% các cảnh cần động tay động chân trên phim là anh tự thân thực hiện. Sắp tới, Brad Pitt góp mặt Babylon cùng Margot Robbie, Olivia Wilde và Tobey Maguire. Đạo diễn kiêm biên kịch là nhà làm phim Damien Chazelle – từng thắng Oscar Đạo diễn xuất sắc năm 2017 với La La Land. 
+              Cũng cố ý hoặc vô tình hiện diện trên con tàu cao tốc oan nghiệt
+              là gần chục tên đồng nghiệp với Ladybug từ tứ xứ tề tựu. Mỗi kẻ
+              mỗi mục đích nhưng đều vì lí do nào đó lại chạm mặt và nảy sinh
+              xung đột chết người! Nếu mê mệt Deadpool và John Wick, nhiều khả
+              năng bạn sẽ thích Bullet Train. Lối kể chuyện đầy hài hước, mỗi
+              khung hình đều đậm chất trào phúng và hàng loạt tình tiết không
+              thể đoán trước đưa công chúng đi hết bất ngờ này tới bất ngờ khác
+              tận cuối phim… dễ khiến công chúng liên tưởng đến tác phẩm mang
+              tên gã lắm mồm nhà Marvel. Cùng lúc, những pha xáp lá cà đỉnh cao,
+              sử dụng bất cứ món đồ nào tiện tay vớ lấy rồi xử nhau ngọt xớt vốn
+              là đặc sản hút khán giả ở John Wick.
             </p>
             <p>
-                Đây chắc chắn là bộ phim cực kì đáng chờ đợi cho các fan điện ảnh nói chung và người hâm mộ Brad Pitt nói riêng. Biết đâu tài tử lại có thêm một đề cử Oscar nữa. Ngoài ra, Brad Pitt sẽ tái hợp George Clooney trong phim li kì do Jon Watts sản xuất. Bộ đôi Ocean và tên tuổi nhà làm phim Jon Watts đang lên sau trilogy Người Nhện là tấm giấy bảo chứng chất lượng. Hết sức phong độ… khi đứng yên – Đó ắt hẳn là những gì khán giả nhận xét tay sát thủ Tangerine. 
+              Cái khó về mặt không gian cũng được xử lí tuyệt hảo. Khác với địa
+              hình đánh nhau rộng rãi của Deadpool hay John Wick, Bullet Train
+              gói gọn tất cả suốt chuyến tàu nhanh. Điều này đòi hỏi đạo diễn
+              David Leitch phải vận dụng tối đa trí tưởng tượng và tài ứng biến
+              để các cảnh hành động thật hợp lí.
             </p>
-            <img src="resouces/img/review-bullet-train-3.jpg" alt="">
+            <img src="resouces/img/review-bullet-train-2.jpg" alt="" />
             <p>
-                Gần như cả phim, hắn xuất hiện đầy vẻ doanh nhân thành đạt. Dẫu phút trước mới đánh nhau tơi tả, phút sau gã Quýt vẫn hết sức bảnh bao. Aaron Taylor-Johnson là một diễn viên sở hữu khuôn mặt lẫn diễn xuất. Đáng tiếc, vài năm gần đây, sự nghiệp hơi chùn xuống. Ives (Tenet) dẫu hay nhưng thiếu tiếng tăm so với Robert Pattinson. Có lẽ, phải chờ đến Kraven The Hunter thì Aaron Taylor-Johnson mới tới thời. Đây là vai diễn anh giành được nhờ màn thể hiện xuất sắc ở Bullet Train. Mong rằng, tác phẩm về kẻ thù người Nhện này sẽ thành công ngang ngửa Venom chứ không rơi vào cảnh dở khóc dở cười của Morbius. 
+              Bullet Train lại mạnh tay sử dụng toàn các mảng màu sặc sỡ. Từ các
+              bảng quảng cáo nổi bật đặc trưng của xứ sở mặt trời mọc tới toa
+              tàu sang trọng đánh đèn ấm áp đủ giúp ngụy trang xác chết thành
+              người say đang ngủ. Trái ngược gã Ladybug chỉ ăn mặc đơn giản: nón
+              bạc màu, kính đen và giày trắng; dàn nhân vật phụ mỗi người mỗi
+              màu, mỗi người một phong cách thời trang. Nhạc phim cũng rất xuất
+              sắc. Ngay từ lúc mới tung trailer, khán giả đã cười lăn cười bò
+              bởi Stayin’ Alive. Khi vào phim, mọi thứ còn “điên” hơn nữa. Đặc
+              biệt nhất hẳn là trường đoạn dành cho ca khúc kinh điển Five
+              Hundred Miles.
             </p>
-            <img src="resouces/img/review-bullet-train-4.jpg" alt="">
             <p>
-                Kịch bản phân chia đất diễn hợp lí nên dàn sao Michael Shannon, Brian Tyree Henry, Bad Bunny, Zazie Beetz, Sanada Hiroyuki… hay thậm chí là người chỉ cameo vài phút ít ỏi như Sandra Bullock cũng đều có khoảnh khắc đáng nhớ riêng. Tuy nhiên, nhân vật gây bất ngờ nhất phải là cô bé sát thủ The Prince. Sinh năm 1999, Joey King diễn xuất khi mới 7 tuổi. Vì vậy, cô vào vai ngọt xớt mà chẳng hề khớp trước dàn diễn viên giàu kinh nghiệm. 
+              Tuy mới vào nghề từ 2021, Zak Olkewicz thành công tạo ra kịch bản
+              hấp dẫn, chặt chẽ và chỉn chu dựa theo tiểu thuyết gốc Isaka
+              Kotaro chắp bút. Gần chục nhân vật quan trọng nhưng mỗi người
+              chẳng bị trôi tuột đi. Cô tiếp viên, ông soát vé hay bà già nghiêm
+              khắc trên chuyến tàu cũng nổi bật. Dù ít ỏi, “văn hóa” Yakuza có
+              màn xuất hiện hoành tráng. Brad Pitt và David Leitch biết nhau hơn
+              hai chục năm. Vị đạo diễn Atomic Blone đóng thế ngôi sao Once Upon
+              A Time… In Hollywood từ Fight Club (1999), Ocean's Eleven (2001),
+              Troy (2004) và Mr. & Mrs. Smith (2005). Pitt cameo Deadpool 2 mà
+              Leitch ngồi ghế đạo diễn. Sự hiểu nhau giữa hai con người bậc nhất
+              phim đã giúp làm nên sự xuất sắc cho Bullet Train.
             </p>
             <p>
-                Bullet Train không dành cho những ai tìm kiếm tác phẩm nhân văn về gã sát thủ già lên chuyến tàu định mệnh. Tuy nhiên, nếu bạn muốn xem phim hay đậm chất hài đen, thừa xốt cà chua và dư bất ngờ từ đầu tới cuối thì Bullet Train chính là cái tên khó thể bỏ qua. 
+              Có thể nói rằng, sau khi chia tay Angelina Jolie, Brad Pitt mới
+              đạt đến đỉnh cao diễn xuất. Trước kia, Pitt không thiếu phim hay
+              như Fight Club, Se7en, The Curious Case of Benjamin Button,
+              Moneyball… nhưng anh ở Ad Astra hay Once Upon A Time… In Hollywood
+              đã đạt tới tầm khác. Cùng là loại vai, Ladybug thu hút hơn hẳn
+              Mr.Smith. Tentoumushi hơi giống Cliff (Once Upon A Time… In
+              Hollywood) và Jack (The Lost City) nên chẳng hề khó diễn.
+            </p>
+            <p>
+              Về mặt hành động, Brad Pitt xứng đáng nhận được tràng vỗ tay. Ở
+              tuổi suýt soát 60, Pitt vẫn cống hiến hết mình. 95% các cảnh cần
+              động tay động chân trên phim là anh tự thân thực hiện. Sắp tới,
+              Brad Pitt góp mặt Babylon cùng Margot Robbie, Olivia Wilde và
+              Tobey Maguire. Đạo diễn kiêm biên kịch là nhà làm phim Damien
+              Chazelle – từng thắng Oscar Đạo diễn xuất sắc năm 2017 với La La
+              Land.
+            </p>
+            <p>
+              Đây chắc chắn là bộ phim cực kì đáng chờ đợi cho các fan điện ảnh
+              nói chung và người hâm mộ Brad Pitt nói riêng. Biết đâu tài tử lại
+              có thêm một đề cử Oscar nữa. Ngoài ra, Brad Pitt sẽ tái hợp George
+              Clooney trong phim li kì do Jon Watts sản xuất. Bộ đôi Ocean và
+              tên tuổi nhà làm phim Jon Watts đang lên sau trilogy Người Nhện là
+              tấm giấy bảo chứng chất lượng. Hết sức phong độ… khi đứng yên – Đó
+              ắt hẳn là những gì khán giả nhận xét tay sát thủ Tangerine.
+            </p>
+            <img src="resouces/img/review-bullet-train-3.jpg" alt="" />
+            <p>
+              Gần như cả phim, hắn xuất hiện đầy vẻ doanh nhân thành đạt. Dẫu
+              phút trước mới đánh nhau tơi tả, phút sau gã Quýt vẫn hết sức bảnh
+              bao. Aaron Taylor-Johnson là một diễn viên sở hữu khuôn mặt lẫn
+              diễn xuất. Đáng tiếc, vài năm gần đây, sự nghiệp hơi chùn xuống.
+              Ives (Tenet) dẫu hay nhưng thiếu tiếng tăm so với Robert
+              Pattinson. Có lẽ, phải chờ đến Kraven The Hunter thì Aaron
+              Taylor-Johnson mới tới thời. Đây là vai diễn anh giành được nhờ
+              màn thể hiện xuất sắc ở Bullet Train. Mong rằng, tác phẩm về kẻ
+              thù người Nhện này sẽ thành công ngang ngửa Venom chứ không rơi
+              vào cảnh dở khóc dở cười của Morbius.
+            </p>
+            <img src="resouces/img/review-bullet-train-4.jpg" alt="" />
+            <p>
+              Kịch bản phân chia đất diễn hợp lí nên dàn sao Michael Shannon,
+              Brian Tyree Henry, Bad Bunny, Zazie Beetz, Sanada Hiroyuki… hay
+              thậm chí là người chỉ cameo vài phút ít ỏi như Sandra Bullock cũng
+              đều có khoảnh khắc đáng nhớ riêng. Tuy nhiên, nhân vật gây bất ngờ
+              nhất phải là cô bé sát thủ The Prince. Sinh năm 1999, Joey King
+              diễn xuất khi mới 7 tuổi. Vì vậy, cô vào vai ngọt xớt mà chẳng hề
+              khớp trước dàn diễn viên giàu kinh nghiệm.
+            </p>
+            <p>
+              Bullet Train không dành cho những ai tìm kiếm tác phẩm nhân văn về
+              gã sát thủ già lên chuyến tàu định mệnh. Tuy nhiên, nếu bạn muốn
+              xem phim hay đậm chất hài đen, thừa xốt cà chua và dư bất ngờ từ
+              đầu tới cuối thì Bullet Train chính là cái tên khó thể bỏ qua.
             </p>
           </div>
 
@@ -170,7 +246,8 @@
                     src="lib/bootstrap-icons-1.9.1/arrow-right.svg"
                     alt=""
                   /><a href="In-developing.html"
-                    >[Review] [Review] Thor Love And Thunder: Nâng Tầm Natalie Portman Và Tiếp Tục Để Chris Hemsworth Tấu Hài?</a
+                    >[Review] [Review] Thor Love And Thunder: Nâng Tầm Natalie
+                    Portman Và Tiếp Tục Để Chris Hemsworth Tấu Hài?</a
                   >
                 </li>
                 <li>
@@ -187,7 +264,8 @@
                     src="lib/bootstrap-icons-1.9.1/arrow-right.svg"
                     alt=""
                   /><a href="review__3.html"
-                    >[Review] Alienoid Cuộc chiến xuyên không: Bom tấn vượt qua mọi giới hạn tưởng tượng</a
+                    >[Review] Alienoid Cuộc chiến xuyên không: Bom tấn vượt qua
+                    mọi giới hạn tưởng tượng</a
                   >
                 </li>
                 <li>
@@ -382,7 +460,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Kẻ săn lùng sợ hãi: Tái sinh
+                      Kẻ săn lùng sợ hãi: Tái sinh
                     </h5>
                   </div>
                 </div>
@@ -417,7 +495,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Ngược Dòng Thời Gian Để Yêu Anh
+                      Ngược Dòng Thời Gian Để Yêu Anh
                     </h5>
                   </div>
                 </div>

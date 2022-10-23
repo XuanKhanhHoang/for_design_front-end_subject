@@ -15,11 +15,15 @@
   <script src="/lib/jquery/js.cookie.js"></script>
   <script src="/style/js/main_js.js"></script>
 
-  <body>
+  <body onclick="check_userusing()">
+    <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
-          <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+          <div
+            class="logo_header col-sm-12 col-md-12 col-lg-6"
+            onclick="golinkss(`index.html`,`_self`)"
+          ></div>
           <div class="searchform col-3 d-md-none d-none d-lg-block">
             <div class="con1 col-12">
               <div class="con col-12">
@@ -55,35 +59,33 @@
             Đăng nhập
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            class="btn btn-outline-secondary btn-link-nav col-lg-2 d-lg-block d-none"
+            onclick="golinkss(`playingmovie.html`,1)"
           >
             Phim
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
           >
             Mua vé
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`blog.html`,1)"
           >
             Blog điện ảnh
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`review.html`,1)"
           >
             Bình luận phim
           </div>
           <div
             class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-            onclick="golinks(`event.html`)"
+            onclick="golinkss(`event.html`,1)"
           >
             Khuyến mãi
-          </div>
-          <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-          >
-            Promotion
           </div>
         </div>
       </div>
@@ -100,14 +102,15 @@
           />
           <i class="ti-search"></i>
         </div>
-        <a href="" class="links-menu"> Phim </a>
+        <a href="/playingmovie.html" class="links-menu"> Phim </a>
         <a href="" class="links-menu"> Mua vé </a>
-        <a href="" class="links-menu"> Blog điện ảnh </a>
-        <a href="" class="links-menu"> Bình luận phim </a>
-        <a href="" class="links-menu"> Khuyến mãi </a>
-        <a href="" class="links-menu"> Promotion </a>
+        <a href="/blog.html" class="links-menu"> Blog điện ảnh </a>
+        <a href="/review.html" class="links-menu"> Bình luận phim </a>
+        <a href="/event.html" class="links-menu"> Khuyến mãi </a>
       </div>
     </div>
+    <!-- /header -->
+
     <div class="container" style="margin-bottom: 1rem; margin-top: 1rem">
       <div class="row">
         <div class="col-md-8">
@@ -121,30 +124,52 @@
                 <span>Thời gian</span> : Từ ngày 01.01.2022 đến 01.01.2023
               </li>
               <li class="main-content">
-                <span>Địa điểm sử dụng</span> : Website và ứng dụng của Spacecinema
+                <span>Địa điểm sử dụng</span> : Website và ứng dụng của
+                Spacecinema
               </li>
               <li class="main-content">
-                <span>Đối tượng khuyến mãi</span> : Tất cả khách hàng của Zalopay đã từng có ít nhất 1 gia dịch thanh toán qua Zalopay
+                <span>Đối tượng khuyến mãi</span> : Tất cả khách hàng của
+                Zalopay đã từng có ít nhất 1 gia dịch thanh toán qua Zalopay
               </li>
               <li class="main-content">
-                <span>Nội dung chương trình</span> : Giảm 25k giá vé khi thanh toán qua Zalopay
+                <span>Nội dung chương trình</span> : Giảm 25k giá vé khi thanh
+                toán qua Zalopay
               </li>
               <li class="main-content">
                 <span>Quy định</span>
                 <ul>
-                    <li>Áp dụng cho tất cả xuất chiếu</li>
-                    <li>Mỗi khách hàng chỉ được tham gia 1 lần trong suốt thời gian diễn ra chương trình</li>
-                    <li>Chương trình có thể kết thúc sớm nếu voucher hết trước thời gian dự kiến</li>
+                  <li>Áp dụng cho tất cả xuất chiếu</li>
+                  <li>
+                    Mỗi khách hàng chỉ được tham gia 1 lần trong suốt thời gian
+                    diễn ra chương trình
+                  </li>
+                  <li>
+                    Chương trình có thể kết thúc sớm nếu voucher hết trước thời
+                    gian dự kiến
+                  </li>
                 </ul>
               </li>
               <li class="main-content">
                 <span>Hướng dẫn thực hiện</span>
                 <ul>
-                    <li>Bước 1: Truy cập Website hoặc ứng dụng của Spacecinema</li>
-                    <li>Bước 2: Tiến hành đặt vé phim với hóa đơn từ 50.000đ trở lên</li>
-                    <li>Bước 3: Chon phương thức thanh toán Zalopay. Mở Zalopay và thực hiện các bước thanh toán. Khánh hàng vui lòng chọn thẻ quà tặng.</li>
-                    <li>Bước 4: Vé giảm giá sẽ được áp dụng nếu bạn đủ điều kiện khi chuyển qua màn hình thanh toán</li>
-                    <li>Bước 5: Kiểm tra kĩ thông tin trước khi bấm thanh toán</li>
+                  <li>
+                    Bước 1: Truy cập Website hoặc ứng dụng của Spacecinema
+                  </li>
+                  <li>
+                    Bước 2: Tiến hành đặt vé phim với hóa đơn từ 50.000đ trở lên
+                  </li>
+                  <li>
+                    Bước 3: Chon phương thức thanh toán Zalopay. Mở Zalopay và
+                    thực hiện các bước thanh toán. Khánh hàng vui lòng chọn thẻ
+                    quà tặng.
+                  </li>
+                  <li>
+                    Bước 4: Vé giảm giá sẽ được áp dụng nếu bạn đủ điều kiện khi
+                    chuyển qua màn hình thanh toán
+                  </li>
+                  <li>
+                    Bước 5: Kiểm tra kĩ thông tin trước khi bấm thanh toán
+                  </li>
                 </ul>
               </li>
               <li class="main-content">
@@ -326,7 +351,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Kẻ săn lùng sợ hãi: Tái sinh
+                      Kẻ săn lùng sợ hãi: Tái sinh
                     </h5>
                   </div>
                 </div>
@@ -361,7 +386,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Ngược Dòng Thời Gian Để Yêu Anh
+                      Ngược Dòng Thời Gian Để Yêu Anh
                     </h5>
                   </div>
                 </div>

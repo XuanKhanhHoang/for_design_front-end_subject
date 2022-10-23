@@ -16,10 +16,14 @@
   <script src="/style/js/main_js.js"></script>
 
   <body onload="check_userusing()">
+    <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
-          <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+          <div
+            class="logo_header col-sm-12 col-md-12 col-lg-6"
+            onclick="golinkss(`index.html`,`_self`)"
+          ></div>
           <div class="searchform col-3 d-md-none d-none d-lg-block">
             <div class="con1 col-12">
               <div class="con col-12">
@@ -55,35 +59,33 @@
             Đăng nhập
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            class="btn btn-outline-secondary btn-link-nav col-lg-2 d-lg-block d-none"
+            onclick="golinkss(`playingmovie.html`,1)"
           >
             Phim
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
           >
             Mua vé
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`blog.html`,1)"
           >
             Blog điện ảnh
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`review.html`,1)"
           >
             Bình luận phim
           </div>
           <div
             class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-            onclick="golinks(`event.html`)"
+            onclick="golinkss(`event.html`,1)"
           >
             Khuyến mãi
-          </div>
-          <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-          >
-            Promotion
           </div>
         </div>
       </div>
@@ -100,14 +102,14 @@
           />
           <i class="ti-search"></i>
         </div>
-        <a href="" class="links-menu"> Phim </a>
+        <a href="/playingmovie.html" class="links-menu"> Phim </a>
         <a href="" class="links-menu"> Mua vé </a>
-        <a href="" class="links-menu"> Blog điện ảnh </a>
-        <a href="" class="links-menu"> Bình luận phim </a>
-        <a href="" class="links-menu"> Khuyến mãi </a>
-        <a href="" class="links-menu"> Promotion </a>
+        <a href="/blog.html" class="links-menu"> Blog điện ảnh </a>
+        <a href="/review.html" class="links-menu"> Bình luận phim </a>
+        <a href="/event.html" class="links-menu"> Khuyến mãi </a>
       </div>
     </div>
+    <!-- /header -->
     <div class="container" style="margin-bottom: 1rem; margin-top: 1rem">
       <div class="row g-5">
         <div class="col-md-8">
@@ -120,7 +122,7 @@
               Top Gun: Maverick chứng minh sự độc nhất vô nhị mang tên Tom
               Cruise. Với anh, chẳng có ĐIỆP VỤ gì là BẤT KHẢ THI!
             </p>
-            <img src="resouces/img/tom-cruise-1.jpg" alt="">
+            <img src="resouces/img/tom-cruise-1.jpg" alt="" />
             <p>
               Dù rất nhiều người trong chúng ta lưu giữ kí ức về kỉ nguyên rực
               rỡ của phim hành động; dù thi thoảng những đứa trẻ vẫn nhắc đến
@@ -155,7 +157,7 @@
               cỡ Tom Cruise. Chưa kể, anh dấn thân vào quá trình làm phim cả
               trước và sau máy quay.
             </p>
-            <img src="resouces/img/tom-cruise-2.jpg" alt="">
+            <img src="resouces/img/tom-cruise-2.jpg" alt="" />
             <p>
               Hơn 30 năm rồi, tất cả đều thay mới, từ đạo diễn, biên kịch, quay
               phim và rất nhiều diễn viên… Quân át chủ bài của nhà sản xuất chỉ
@@ -330,7 +332,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Kẻ săn lùng sợ hãi: Tái sinh
+                      Kẻ săn lùng sợ hãi: Tái sinh
                     </h5>
                   </div>
                 </div>
@@ -365,7 +367,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Ngược Dòng Thời Gian Để Yêu Anh
+                      Ngược Dòng Thời Gian Để Yêu Anh
                     </h5>
                   </div>
                 </div>

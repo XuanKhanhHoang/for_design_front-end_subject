@@ -15,11 +15,15 @@
   <script src="/lib/jquery/js.cookie.js"></script>
   <script src="/style/js/main_js.js"></script>
 
-  <body>
+  <body onclick="check_userusing()">
+    <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
-          <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+          <div
+            class="logo_header col-sm-12 col-md-12 col-lg-6"
+            onclick="golinkss(`index.html`,`_self`)"
+          ></div>
           <div class="searchform col-3 d-md-none d-none d-lg-block">
             <div class="con1 col-12">
               <div class="con col-12">
@@ -55,35 +59,33 @@
             Đăng nhập
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            class="btn btn-outline-secondary btn-link-nav col-lg-2 d-lg-block d-none"
+            onclick="golinkss(`playingmovie.html`,1)"
           >
             Phim
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
           >
             Mua vé
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`blog.html`,1)"
           >
             Blog điện ảnh
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`review.html`,1)"
           >
             Bình luận phim
           </div>
           <div
             class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-            onclick="golinks(`event.html`)"
+            onclick="golinkss(`event.html`,1)"
           >
             Khuyến mãi
-          </div>
-          <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-          >
-            Promotion
           </div>
         </div>
       </div>
@@ -100,14 +102,15 @@
           />
           <i class="ti-search"></i>
         </div>
-        <a href="" class="links-menu"> Phim </a>
+        <a href="/playingmovie.html" class="links-menu"> Phim </a>
         <a href="" class="links-menu"> Mua vé </a>
-        <a href="" class="links-menu"> Blog điện ảnh </a>
-        <a href="" class="links-menu"> Bình luận phim </a>
-        <a href="" class="links-menu"> Khuyến mãi </a>
-        <a href="" class="links-menu"> Promotion </a>
+        <a href="/blog.html" class="links-menu"> Blog điện ảnh </a>
+        <a href="/review.html" class="links-menu"> Bình luận phim </a>
+        <a href="/event.html" class="links-menu"> Khuyến mãi </a>
       </div>
     </div>
+    <!-- /header -->
+
     <div class="container" style="margin-bottom: 1rem; margin-top: 1rem">
       <div class="row">
         <div class="col-md-8">
@@ -117,47 +120,62 @@
 
           <div class="web-content">
             <ol>
-                <p>Trong không khí hân hoan bắt đầu năm học mới, Spacecinema dành tặng LIÊN HOÀN ƯU ĐÃI cho các bạn học sinh sinh viên. </p>
-                <p>Nhận ngay vé MIỄN PHÍ & mua 01 tặng 01 & Combo bắp nước chỉ bằng một thao tác đơn giản! </p>
-                <p>Từ 20.09 – 03.10.2022, khi các bạn học sinh sinh viên tải App Spacecinema đăng kí thành viên mới, nhận liền 01 E-voucher xem phim miễn phí áp dụng lập tức và nhận thêm E-voucher Mua 01 tặng 01 cùng 01 E-Voucher Combo Big. Số lượng voucher có hạn, các Stars nhớ đến sớm nhé.  </p>
-                <p>Chưa hết, các rạp Galaxy tại Tp. Hồ Chí Minh còn tặng luôn kem chống nắng MIRI SPF30+ PA+++ 30g. Số lượng có hạn, các bạn sinh viên và học sinh nhanh chân ghé Spacecinema nhé.</p>
-                <span style="font-weight: bolder;">ĐIỀU KIỆN ÁP DỤNG</span>
-                <li class="main-content">
+              <p>
+                Trong không khí hân hoan bắt đầu năm học mới, Spacecinema dành
+                tặng LIÊN HOÀN ƯU ĐÃI cho các bạn học sinh sinh viên.
+              </p>
+              <p>
+                Nhận ngay vé MIỄN PHÍ & mua 01 tặng 01 & Combo bắp nước chỉ bằng
+                một thao tác đơn giản!
+              </p>
+              <p>
+                Từ 20.09 – 03.10.2022, khi các bạn học sinh sinh viên tải App
+                Spacecinema đăng kí thành viên mới, nhận liền 01 E-voucher xem
+                phim miễn phí áp dụng lập tức và nhận thêm E-voucher Mua 01 tặng
+                01 cùng 01 E-Voucher Combo Big. Số lượng voucher có hạn, các
+                Stars nhớ đến sớm nhé.
+              </p>
+              <p>
+                Chưa hết, các rạp Galaxy tại Tp. Hồ Chí Minh còn tặng luôn kem
+                chống nắng MIRI SPF30+ PA+++ 30g. Số lượng có hạn, các bạn sinh
+                viên và học sinh nhanh chân ghé Spacecinema nhé.
+              </p>
+              <span style="font-weight: bolder">ĐIỀU KIỆN ÁP DỤNG</span>
+              <li class="main-content">
                 <span>E-VOUCHER VÉ XEM PHIM</span>
                 <ul>
-                  <li>
-                    Hạn sử dụng: 22.09.2022 - 30.11.2022 (2 Tháng)
-                  </li>
-                  <li>
-                    Voucher tương đương 1 vé xem phim 2D miễn phí.
-                  </li>
+                  <li>Hạn sử dụng: 22.09.2022 - 30.11.2022 (2 Tháng)</li>
+                  <li>Voucher tương đương 1 vé xem phim 2D miễn phí.</li>
                   <li>Không áp dụng cho suất chiếu sớm, suất chiếu đặc biệt</li>
-                  <li>trong mọi trường hợp, quyết định của Spacecinema là quyết định cuối cùng</li>
+                  <li>
+                    trong mọi trường hợp, quyết định của Spacecinema là quyết
+                    định cuối cùng
+                  </li>
                 </ul>
               </li>
               <li class="main-content">
                 <span>E-VOUCHER MUA 1 TẶNG 1</span>
                 <ul>
-                    <li>
-                        Hạn sử dụng: 22.09.2022 - 29.12.2022 (3 Tháng)
-                      </li>
-                      <li>
-                        Voucher tương đương 1 vé xem phim 2D miễn phí.
-                      </li>
-                      <li>Chỉ áp dụng cho giao dịch từ 2 vé xem phim trở lên</li>
-                      <li>Không áp dụng cho suất chiếu sớm, suất chiếu đặc biệt</li>
-                      <li>trong mọi trường hợp, quyết định của Spacecinema là quyết định cuối cùng</li>
+                  <li>Hạn sử dụng: 22.09.2022 - 29.12.2022 (3 Tháng)</li>
+                  <li>Voucher tương đương 1 vé xem phim 2D miễn phí.</li>
+                  <li>Chỉ áp dụng cho giao dịch từ 2 vé xem phim trở lên</li>
+                  <li>Không áp dụng cho suất chiếu sớm, suất chiếu đặc biệt</li>
+                  <li>
+                    trong mọi trường hợp, quyết định của Spacecinema là quyết
+                    định cuối cùng
+                  </li>
                 </ul>
               </li>
               <li class="main-content">
                 <span>E-VOUCHER TẶNG 1 COMBO 1 BIG</span>
                 <ul>
-                    <li>
-                        Hạn sử dụng: 22.09.2022 - 29.12.2022 (3 Tháng)
-                      </li>
-                      <li>Chỉ áp dụng cho giao dịch từ 2 vé xem phim trở lên</li>
-                      <li>Không áp dụng cho suất chiếu sớm, suất chiếu đặc biệt</li>
-                      <li>trong mọi trường hợp, quyết định của Spacecinema là quyết định cuối cùng</li>
+                  <li>Hạn sử dụng: 22.09.2022 - 29.12.2022 (3 Tháng)</li>
+                  <li>Chỉ áp dụng cho giao dịch từ 2 vé xem phim trở lên</li>
+                  <li>Không áp dụng cho suất chiếu sớm, suất chiếu đặc biệt</li>
+                  <li>
+                    trong mọi trường hợp, quyết định của Spacecinema là quyết
+                    định cuối cùng
+                  </li>
                 </ul>
               </li>
               <li class="main-content">
@@ -339,7 +357,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Kẻ săn lùng sợ hãi: Tái sinh
+                      Kẻ săn lùng sợ hãi: Tái sinh
                     </h5>
                   </div>
                 </div>
@@ -374,7 +392,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Ngược Dòng Thời Gian Để Yêu Anh
+                      Ngược Dòng Thời Gian Để Yêu Anh
                     </h5>
                   </div>
                 </div>

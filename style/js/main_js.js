@@ -297,5 +297,5 @@ function dd(event) {
 
 //golinks
 function golinkss(e, t) {
-  window.open("index.html", "_self");
+  window.open(e, "_self");
 }

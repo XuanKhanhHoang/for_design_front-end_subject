@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[Review] Alienoid Cuộc Chiến Xuyên Không: Bom Tấn Vượt Qua Mọi Giới Hạn Tưởng Tượng!</title>
+    <title>
+      [Review] Alienoid Cuộc Chiến Xuyên Không: Bom Tấn Vượt Qua Mọi Giới Hạn
+      Tưởng Tượng!
+    </title>
     <link rel="stylesheet" href="lib/bootstrap-520/css/bootstrap.css" />
     <link rel="stylesheet" href="style/css/style__review__1.css" />
     <link rel="stylesheet" href="style/css/css__header_.css" />
@@ -14,11 +17,15 @@
   <script src="/lib/jquery/jquery-3.6.2.min.js"></script>
   <script src="/lib/jquery/js.cookie.js"></script>
   <script src="/style/js/main_js.js"></script>
-  <body>
+  <body onclick="check_userusing()">
+    <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
-          <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+          <div
+            class="logo_header col-sm-12 col-md-12 col-lg-6"
+            onclick="golinkss(`index.html`,`_self`)"
+          ></div>
           <div class="searchform col-3 d-md-none d-none d-lg-block">
             <div class="con1 col-12">
               <div class="con col-12">
@@ -54,35 +61,33 @@
             Đăng nhập
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            class="btn btn-outline-secondary btn-link-nav col-lg-2 d-lg-block d-none"
+            onclick="golinkss(`playingmovie.html`,1)"
           >
             Phim
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
           >
             Mua vé
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`blog.html`,1)"
           >
             Blog điện ảnh
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`review.html`,1)"
           >
             Bình luận phim
           </div>
           <div
             class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-            onclick="golinks(`event.html`)"
+            onclick="golinkss(`event.html`,1)"
           >
             Khuyến mãi
-          </div>
-          <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-          >
-            Promotion
           </div>
         </div>
       </div>
@@ -99,14 +104,15 @@
           />
           <i class="ti-search"></i>
         </div>
-        <a href="" class="links-menu"> Phim </a>
+        <a href="/playingmovie.html" class="links-menu"> Phim </a>
         <a href="" class="links-menu"> Mua vé </a>
-        <a href="" class="links-menu"> Blog điện ảnh </a>
-        <a href="" class="links-menu"> Bình luận phim </a>
-        <a href="" class="links-menu"> Khuyến mãi </a>
-        <a href="" class="links-menu"> Promotion </a>
+        <a href="/blog.html" class="links-menu"> Blog điện ảnh </a>
+        <a href="/review.html" class="links-menu"> Bình luận phim </a>
+        <a href="/event.html" class="links-menu"> Khuyến mãi </a>
       </div>
     </div>
+    <!-- /header -->
+
     <div class="container" style="margin-bottom: 1rem; margin-top: 1rem">
       <div class="row">
         <div class="col-md-8">
@@ -147,7 +153,7 @@
               nhìn trailer, chẳng mấy ai đoán được bữa tiệc đồ sộ mà nhà làm
               phim muốn khán giả thưởng thức.
             </p>
-            <img src="resouces/img/alienoid-1.jpg" alt="">
+            <img src="resouces/img/alienoid-1.jpg" alt="" />
             <p>
               Thật ra, Alienoid là mở đầu hoành tráng cho câu chuyện dài hơi
               phía sau. Phim đã quay luôn hai phần, phần tiếp theo sẽ ra mắt năm
@@ -183,7 +189,7 @@
               làn sóng Hallyu. Dàn diễn viên phụ đáng chú ý có So Ji Sub, Kim
               Eui Sung và hoa hậu kiêm diễn viên Honey Lee.
             </p>
-            <img src="resouces/img/alienoid-2.jpg" alt="">
+            <img src="resouces/img/alienoid-2.jpg" alt="" />
             <p>
               Nổi tiếng nhờ phim gia đình Hàn Quốc kinh điển - Reply 1988, Ryu
               Jun Yeol chẳng thuộc tuýp nam thần có khuôn mặt đẹp chuẩn Hàn. Dẫu
@@ -194,7 +200,7 @@
               bao đồng hiện tại chưa giúp Ryu Jun Yeo thể hiện rõ năng lực diễn
               xuất. Chuyện hay sẽ còn ở phần tiếp theo!
             </p>
-            <img src="resouces/img/alienoid-3.jpg" alt="">
+            <img src="resouces/img/alienoid-3.jpg" alt="" />
             <p>
               Đối trọng với Ryu Jun Yeol tài năng là ảnh hậu đình đám Kim Tae
               Ri. Nổi lên từ tác phẩm nổi tiếng Người Hầu Gái, tên tuổi Kim Tae
@@ -231,7 +237,8 @@
                     src="lib/bootstrap-icons-1.9.1/arrow-right.svg"
                     alt=""
                   /><a href="In-developing.html"
-                    >[Review] [Review] Thor Love And Thunder: Nâng Tầm Natalie Portman Và Tiếp Tục Để Chris Hemsworth Tấu Hài?</a
+                    >[Review] [Review] Thor Love And Thunder: Nâng Tầm Natalie
+                    Portman Và Tiếp Tục Để Chris Hemsworth Tấu Hài?</a
                   >
                 </li>
                 <li>
@@ -248,7 +255,8 @@
                     src="lib/bootstrap-icons-1.9.1/arrow-right.svg"
                     alt=""
                   /><a href="review__2.html"
-                    >[Review] Bullet train: Brad Pitt trở thành John Wick "số nhọ"</a
+                    >[Review] Bullet train: Brad Pitt trở thành John Wick "số
+                    nhọ"</a
                   >
                 </li>
                 <li>
@@ -443,7 +451,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Kẻ săn lùng sợ hãi: Tái sinh
+                      Kẻ săn lùng sợ hãi: Tái sinh
                     </h5>
                   </div>
                 </div>
@@ -478,7 +486,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Ngược Dòng Thời Gian Để Yêu Anh
+                      Ngược Dòng Thời Gian Để Yêu Anh
                     </h5>
                   </div>
                 </div>

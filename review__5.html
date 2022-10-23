@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[Preview] Black Panther Wakanda Forever: T'Challa hi sinh trong trận chiến với Atlantis</title>
+    <title>
+      [Preview] Black Panther Wakanda Forever: T'Challa hi sinh trong trận chiến
+      với Atlantis
+    </title>
     <link rel="stylesheet" href="lib/bootstrap-520/css/bootstrap.css" />
     <link rel="stylesheet" href="style/css/style__review__1.css" />
     <link rel="stylesheet" href="style/css/css__header_.css" />
@@ -14,11 +17,15 @@
   <script src="/lib/jquery/jquery-3.6.2.min.js"></script>
   <script src="/lib/jquery/js.cookie.js"></script>
   <script src="/style/js/main_js.js"></script>
-  <body>
+  <body onclick="check_userusing()">
+    <!-- header -->
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
-          <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+          <div
+            class="logo_header col-sm-12 col-md-12 col-lg-6"
+            onclick="golinkss(`index.html`,`_self`)"
+          ></div>
           <div class="searchform col-3 d-md-none d-none d-lg-block">
             <div class="con1 col-12">
               <div class="con col-12">
@@ -54,35 +61,33 @@
             Đăng nhập
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            class="btn btn-outline-secondary btn-link-nav col-lg-2 d-lg-block d-none"
+            onclick="golinkss(`playingmovie.html`,1)"
           >
             Phim
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
           >
             Mua vé
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`blog.html`,1)"
           >
             Blog điện ảnh
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`review.html`,1)"
           >
             Bình luận phim
           </div>
           <div
             class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-            onclick="golinks(`event.html`)"
+            onclick="golinkss(`event.html`,1)"
           >
             Khuyến mãi
-          </div>
-          <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-          >
-            Promotion
           </div>
         </div>
       </div>
@@ -99,14 +104,15 @@
           />
           <i class="ti-search"></i>
         </div>
-        <a href="" class="links-menu"> Phim </a>
+        <a href="/playingmovie.html" class="links-menu"> Phim </a>
         <a href="" class="links-menu"> Mua vé </a>
-        <a href="" class="links-menu"> Blog điện ảnh </a>
-        <a href="" class="links-menu"> Bình luận phim </a>
-        <a href="" class="links-menu"> Khuyến mãi </a>
-        <a href="" class="links-menu"> Promotion </a>
+        <a href="/blog.html" class="links-menu"> Blog điện ảnh </a>
+        <a href="/review.html" class="links-menu"> Bình luận phim </a>
+        <a href="/event.html" class="links-menu"> Khuyến mãi </a>
       </div>
     </div>
+    <!-- /header -->
+
     <div class="container" style="margin-bottom: 1rem; margin-top: 1rem">
       <div class="row">
         <div class="col-md-8">
@@ -130,7 +136,10 @@
               Oscar cũng như vinh dự nằm trong danh sách đề cử Phim hay nhất
               Oscar 2019.
             </p>
-            <img src="resouces/img/preview-black-panther-wakanda-forever-1.jpg" alt="" />
+            <img
+              src="resouces/img/preview-black-panther-wakanda-forever-1.jpg"
+              alt=""
+            />
             <p>
               Chuyện một ngôi sao ra đi giữa lúc franchise đang diễn ra từng có
               tiền lệ. Công chúng hẳn chưa quên Paul Walker tài năng của Fast &
@@ -164,7 +173,6 @@
               thủ bậc nhất sụp đổ?
             </p>
 
-
             <p>
               Chắc chắn, trận chiến ấy để lại vô vàn đau thương, bởi nữ hoàng
               Ramonda thốt lên đầy phẫn uất: “Ta là nữ hoàng của quốc gia hùng
@@ -190,7 +198,10 @@
               con dưới nước ít nhiều củng cố suy luận này. Tính tới thời điểm
               hiện tại, đây là giả thiết hợp lí nhất.
             </p>
-            <img src="resouces/img/preview-black-panther-wakanda-forever-2.jpg" alt="" />
+            <img
+              src="resouces/img/preview-black-panther-wakanda-forever-2.jpg"
+              alt=""
+            />
             <p>
               Ngoài Chadwick Boseman, dễ dàng nhận ra W’Kabi – bạn thân T’Challa
               kiêm chồng tướng quân Okoye cũng mất hút. Thật đáng tiếc, do xung
@@ -257,7 +268,8 @@
                     src="lib/bootstrap-icons-1.9.1/arrow-right.svg"
                     alt=""
                   /><a href="review__1.html"
-                    >[Preview] Black Adam: Dwayne Johnson Thành Phản Anh Hùng Cục Súc?</a
+                    >[Preview] Black Adam: Dwayne Johnson Thành Phản Anh Hùng
+                    Cục Súc?</a
                   >
                 </li>
                 <li>
@@ -471,7 +483,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Kẻ săn lùng sợ hãi: Tái sinh
+                      Kẻ săn lùng sợ hãi: Tái sinh
                     </h5>
                   </div>
                 </div>
@@ -506,7 +518,7 @@
                         margin-bottom: 10px;
                       "
                     >
-                    Ngược Dòng Thời Gian Để Yêu Anh
+                      Ngược Dòng Thời Gian Để Yêu Anh
                     </h5>
                   </div>
                 </div>

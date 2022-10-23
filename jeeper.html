@@ -39,7 +39,10 @@
     <header style="background-color: #000000">
       <div class="container" style="position: relative">
         <div class="row">
-          <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+          <div
+            class="logo_header col-sm-12 col-md-12 col-lg-6"
+            onclick="golinkss(`index.html`,`_self`)"
+          ></div>
           <div class="searchform col-3 d-md-none d-none d-lg-block">
             <div class="con1 col-12">
               <div class="con col-12">
@@ -48,15 +51,13 @@
                   class="search-box form-control-sm"
                   type="text"
                   name="search"
-                  style="font-size: 16px"
                 />
-                <i class="ti-search" style="font-size: 14px"></i>
+                <i class="ti-search"></i>
               </div>
             </div>
           </div>
           <div
             class="login-btn-header login-btn-user btn btn-outline-light d-none d-lg-block"
-            style="font-size: 15px"
             onclick="golinks(`login_register.html`)"
           >
             Đăng nhập
@@ -64,13 +65,11 @@
         </div>
       </div>
     </header>
-    <nav
-      style="width: 100%; background-color: #000000; font-size: 16px !important"
-    >
+    <nav style="width: 100%; background-color: #000000">
       <div class="container">
         <div class="row justify-content-between">
           <div class="menu-icon d-lg-none" onclick="menu(1,'auto',1,setmenu)">
-            <i class="ti-menu" style="font-size: 30px; color: #fff"></i>
+            <i class="ti-menu" style="font-size: 2rem; color: #fff"></i>
           </div>
           <div
             class="login-btn-nav btn login-btn-user btn-outline-light d-lg-none"
@@ -79,38 +78,38 @@
             Đăng nhập
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+            class="btn btn-outline-secondary btn-link-nav col-lg-2 d-lg-block d-none"
+            onclick="golinkss(`playingmovie.html`,1)"
           >
             Phim
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
           >
             Mua vé
           </div>
           <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`blog.html`,1)"
           >
-            News
+            Blog điện ảnh
+          </div>
+          <div
+            class="btn btn-outline-secondary btn-link-nav col-2 d-none d-lg-block"
+            onclick="golinkss(`review.html`,1)"
+          >
+            Bình luận phim
           </div>
           <div
             class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-            onclick="golinks(`event.html`)"
+            onclick="golinkss(`event.html`,1)"
           >
             Khuyến mãi
-          </div>
-          <div
-            class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
-          >
-            Promotion
           </div>
         </div>
       </div>
     </nav>
-    <div
-      class="container menu-list-md_sm"
-      style="height: 0; opacity: 0; background-color: #fff; font-size: 16px"
-    >
+    <div class="container menu-list-md_sm" style="height: 0; opacity: 0">
       <div class="sm-menu col-12" style="padding: 15px">
         <i class="ti-close menu-icon-close" onclick="menu(0,0,0,setmenu)"></i>
         <div class="con search-box-menu">
@@ -122,14 +121,15 @@
           />
           <i class="ti-search"></i>
         </div>
-        <a href="" class="links-menu"> Phim </a>
+        <a href="/playingmovie.html" class="links-menu"> Phim </a>
         <a href="" class="links-menu"> Mua vé </a>
-        <a href="" class="links-menu"> News </a>
-        <a href="" class="links-menu"> Khuyến mãi </a>
-        <a href="" class="links-menu"> Promotion </a>
+        <a href="/blog.html" class="links-menu"> Blog điện ảnh </a>
+        <a href="/review.html" class="links-menu"> Bình luận phim </a>
+        <a href="/event.html" class="links-menu"> Khuyến mãi </a>
       </div>
     </div>
     <!-- /header -->
+
     <div class="main">
       <div class="main__container">
         <div class="grid wide">
