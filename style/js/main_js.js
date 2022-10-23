@@ -46,14 +46,14 @@
     window.open(e);
   }
 }
-//date picker
-{
-  let startDate = document.getElementById("bornDate");
-  startDate.addEventListener("change", (e) => {
-    let startDateVal = e.target.value;
-    document.getElementById("startDateSelected").innerText = startDateVal;
-  });
-}
+// //date picker
+// {
+//   let startDate = document.getElementById("bornDate");
+//   startDate.addEventListener("change", (e) => {
+//     let startDateVal = e.target.value;
+//     document.getElementById("startDateSelected").innerText = startDateVal;
+//   });
+// }
 
 //animate
 function hiddent() {
@@ -285,14 +285,15 @@ function showpass(id, cls) {
   }
 }
 //sync enter key
-$("#pwd").keyup(function (event) {
+document.addEventListener("keyup", dd);
+function dd(event) {
   if (event.keyCode === 13) {
     RememberMe();
     Login();
     validateEmail();
     validatePassword();
   }
-});
+}
 
 //golinks
 function golinkss(e, t) {

@@ -169,6 +169,7 @@
                       required
                       aria-label=".form-control-sm example"
                       id="pwd"
+                      onkeyup="dd()"
                     />
                     <i
                       class="ti-eye passw-icon"
@@ -212,7 +213,7 @@
                   checked
                 />
                 <label class="form-check-label" for="flexCheckChecked">
-                  Lưu ID
+                  Nhớ mật khẩu
                 </label>
               </div>
               <div
@@ -368,7 +369,6 @@
             <p class="passw col-3">Nhập ngày sinh của bạn</p>
             <div class="col-xs-7 col-md-8" style="padding: 0; width: 75%">
               <input id="startDate" class="form-control" type="date" />
-              <span id="startDateSelected"></span>
             </div>
           </div>
           <div class="d-grid gap-2 col-6 mx-auto">
