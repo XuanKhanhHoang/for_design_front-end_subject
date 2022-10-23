@@ -199,6 +199,10 @@
   font-size: 20;
 }
 
+.event-review h2 {
+  font-size: 19px; color: white
+}
+
 .next-page-bar a.active {
   background-color: #000000;
   color: white;
@@ -207,5 +211,26 @@
   background-color: #ddd;
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .event-info a {
+    font-size: 12px;
+  }
+  .event-review h2 {
+    font-size: 14px;
+  }
+}
 
-
+@media screen and (max-width: 1199px) and (min-width: 991px) {
+  .event-info a {
+    font-size: 12px;
+  }
+  .event-info{
+    padding: 5px 10px;
+  }
+  .event-review h2 {
+    font-size: 15px;
+  }
+  .event-review p {
+    font-size: 12px;
+  }
+}
