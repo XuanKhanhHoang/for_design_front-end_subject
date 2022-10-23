@@ -293,3 +293,8 @@ $("#pwd").keyup(function (event) {
     validatePassword();
   }
 });
+
+//golinks
+function golinkss(e, t) {
+  window.open("index.html", "_self");
+}

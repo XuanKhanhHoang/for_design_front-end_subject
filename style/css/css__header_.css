@@ -13,6 +13,7 @@
   min-height: 100px;
   background-repeat: no-repeat;
   display: inline-block;
+  cursor: pointer;
 }
 .searchform {
   position: relative;

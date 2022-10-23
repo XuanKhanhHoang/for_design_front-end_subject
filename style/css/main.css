@@ -1,0 +1,130 @@
+.header {
+    background-color: #000;
+    height: 100px;
+}
+
+.main__content {
+    background-color: var(--white-color);
+    padding: 20px 0;
+    animation: Growth ease-in-out 0.2s;
+}
+
+.main__body {
+    width: 100%;
+}
+
+.heading {
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+}
+
+.heading__title {
+    margin-right: 30px;
+}
+
+.heading__title-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--text-color) !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 12px 0;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+/* .heading__title-link:hover {
+    color: var(--text-color);
+} */
+
+.heading__title-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    animation: Growth ease 0.2s;
+}
+
+.heading {
+    display: flex;
+}
+
+.active .heading__title-link::after {
+    display: block;
+}
+
+.non-active {
+    opacity: 0.8;
+}
+
+.non-active:hover {
+    opacity: 1;
+    color: #000;
+}
+
+.non-active .heading__title-link::after {
+    display: none;
+}
+
+.non-active:hover .heading__title-link::after {
+    display: block;
+}
+
+/* Introduce */
+
+.film__introduce {
+    padding-top: 32px;
+    text-align: justify;
+}
+
+.heading__introduce {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 14px 0;
+}
+
+.heading__introduce:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.description {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.name__film {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 18px 0;
+}
+
+.name__film:hover {
+    color: var(--primary-color);
+}
+
+.footer {
+    height: 100px;
+    background-color: #000;
+}
+
+
+
