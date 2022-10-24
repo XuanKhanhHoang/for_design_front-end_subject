@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.btn-link-nav {
+  color: #fafafa;
+}
+.logo_header {
+  background-image: url(/resouces/img/logog.png);
+  background-size: contain;
+  background-position: center;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+}
+.searchform {
+  position: relative;
+}
+.con1 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.con {
+  position: relative;
+}
+.search-box {
+  border-radius: 0;
+  width: 100%;
+}
+.ti-search {
+  position: absolute;
+  right: 2%;
+  transform: translate(0, -50%);
+  top: 50%;
+  cursor: pointer;
+}
+.login-btn-header {
+  width: 15%;
+  display: inline-block;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 2%;
+  padding: 0.3rem;
+}
+.menu-icon {
+  cursor: pointer;
+  padding: 5px;
+  width: 47px;
+  margin-left: 1rem;
+}
+.login-btn-nav {
+  /* max-width: 30%; */
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 10rem;
+}
+.col-2_4 {
+  width: 16.66%;
+}
+.btn-link-nav {
+  margin-top: 5px;
+  border-radius: 0%;
+  border: none;
+}
+.search-box-menu {
+  margin-top: 1rem;
+  width: 65%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 1rem;
+}
+.links-menu {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+.menu-icon-close {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.menu-list-md_sm-appear {
+  transition: visibility 0s, opacity 0.5s linear;
+  visibility: visible;
+}
+.menu-list-md_sm-disapppear {
+  transition: height 0s, opacity 0s;
+  visibility: hidden;
+}
+.sm-menu {
+  visibility: hidden;
+}
+.showing-background {
+  visibility: visible;
+}
+.login-btn-user {
+  overflow: hidden;
+}

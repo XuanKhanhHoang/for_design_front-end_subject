@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.title {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 0.8rem;
+  color: #fafafad6;
+}
+.footer-item > p {
+  display: inline-block;
+}
+.title-footer {
+  position: relative;
+  margin-bottom: 1rem !important;
+  margin-bottom: 0;
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.up-line-ttle {
+  background-color: #fff;
+  width: 3px;
+  height: 70%;
+  top: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+.footer-item {
+  font-size: 0.8rem;
+  padding-bottom: 0.1rem;
+  display: inline;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff91;
+}
+.footer-list > div {
+  display: inline-block !important;
+}
+.icon-connect {
+  font-size: 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  color: #000000d6;
+  padding: 3px;
+  background-color: #ffffff91;
+  border-radius: 11%;
+  margin-right: 10px;
+}
+.connect {
+  margin-bottom: 16px;
+}
+.icon-indow {
+  display: inline-block;
+  padding: 5px;
+}
+.icon-connect,
+.icon-indow {
+  cursor: pointer;
+}
+.footer-item > * {
+  cursor: pointer;
+}
+.footer-item > *:hover {
+  color: rgb(243, 159, 13);
+}
+.footer-item > i:hover + p {
+  color: rgb(243, 159, 13);
+}
+.icon-gg:hover {
+  color: rgb(81, 226, 81);
+}
+.icon-app:hover {
+  color: rgb(0, 201, 242);
+}
+.ti-facebook:hover {
+  background-color: rgb(6, 39, 202);
+}
+.ti-instagram:hover {
+  background-color: rgb(210, 210, 80);
+}
+.ti-youtube:hover {
+  background-color: rgb(232, 77, 77);
+}
+.footer-item {
+  font-size: 12px;
+}
+.title-footer {
+  font-size: 16px;
+}
