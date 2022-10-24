@@ -61,7 +61,7 @@ function hiddent() {
     $(".hid_background").removeClass("show-background");
     $(".success_login").removeClass("show-background");
   } else {
-    window.location = "blog.html";
+    window.location = "index.html";
   }
 }
 function appearRegis() {
@@ -105,7 +105,7 @@ function resgis() {
   }
 }
 function goIndex() {
-  window.open("blog.html", "_self");
+  window.open("index.html", "_self");
 }
 function appear_hidden_resgis() {
   $(".hid_background-resgis").addClass("show-background");
