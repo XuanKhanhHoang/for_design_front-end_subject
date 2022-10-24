@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url(./reset.css);
+@import url(./root.css);
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--back-color);
+    font-family: 'Poppins', sans-serif;
+    background: url(https://cdna.artstation.com/p/assets/images/images/031/645/214/large/shreyas-raut-avatar-2.jpg?1604210989);
+    object-position: center;
+    background-repeat: no-repeat;
+}
+
+.center {
+    margin: auto
+}
+
+.top-container,
+.nav-bar {
+    border: 1px solid var(--main-color-2);
+    border-radius: 5px;
+}
+
+.top-container {
+    display: grid;
+    justify-content: center;
+    background-color: var(--back-color);
+    align-items: center;
+    grid-auto-rows: minmax(60px, auto);
+    grid-template-columns: repeat( auto-fill, minmax(500px, 1fr));
+    margin-bottom: 20px;
+    opacity: .9;
+}
+
+.logo img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo p {
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 50px var(--main-color-2);
+}
+
+.top-container input {
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    background-color: var(--back-color);
+    color: var(--main-color-2);
+    font-size: 20px;
+}
+
+span {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.top-container input:hover {
+    transition: 2s;
+    transition-timing-function: ease;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 17% 83%;
+    align-items: center;
+}
+
+.user-nav {
+    margin: auto;
+}
+
+.user-nav a {
+    text-decoration: none;
+    color: var(--main-color-2);
+    text-transform: capitalize;
+}
+
+.user-nav a:hover {
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition-timing-function: ease;
+    transition: 0.3s;
+    color: var(--back-color);
+}
+
+.nav-bar {
+    max-width: 100%;
+    background-color: var(--back-color);
+    opacity: .8;
+    grid-auto-rows: minmax(60px, auto);
+    margin-bottom: 20px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: grid;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-columns: repeat( auto-fill, minmax(20%, 1fr));
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.nav-bar li {
+    text-align: center;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--main-color-2);
+    font-size: 25px;
+}
+
+.nav-bar a:hover {
+    color: var(--main-color);
+    background-color: var(--back-color);
+    border: 1px solid var(--main-color-2);
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 200ms ease;
+    transform: scale();
+}

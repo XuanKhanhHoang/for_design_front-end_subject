@@ -1,0 +1,7 @@
+:root {
+    --main-color: rgb(219, 112, 147);
+    --back-color: white;
+    --main-color-2: black;
+    --main-color-hover: rgb(219, 112, 147, 1);
+    --blur-background-hover: rgba(0, 0, 0, .4);
+}

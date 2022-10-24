@@ -1,0 +1,257 @@
+      /* For desktop */
+      
+      @media only screen and (max-width: 1366px) {
+        .top-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+        .top10films {
+            display: grid;
+        }
+        .top10-align {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            font-size: 10px;
+        }
+        .top10-align a {
+            position: relative;
+            right: -70px;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 15% 10% 10% 20%;
+        }
+        .footer-header {
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 15% 10% 10% 20%;
+        }
+    }
+    
+    @media only screen and (max-width:1536px) {
+        .top10-align a {
+            position: relative;
+            right: -70px;
+        }
+        .top10-align p {
+            font-size: 10px;
+        }
+    }
+    
+    @media only screen and (max-width:1440px) {
+        .top-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+    }
+    /* For mobile */
+     @media only screen and (max-width:360px) {
+      .top-container {
+          display: grid;
+          grid-template-columns: 100%;
+      }
+      .nav-bar a {
+          font-size: 15px;
+      }
+      .logo-end {
+          display: none;
+      }
+      .top10-align a {
+          display: none;
+      }
+      .carousel {
+          height: 1000px;
+      }
+  } 
+    
+    @media only screen and (max-width: 375px) {
+        body {
+            background: url(https://yesimadesigner.com/wp-content/uploads/2019/06/Thumbnail-movie-poster-design.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .top-container {
+            grid-template-columns: repeat( auto-fill, minmax(100px, 1fr));
+        }
+        .logo img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+        .logo p {
+            font-size: 10px;
+            padding: 10px;
+        }
+        .nav-bar a {
+            font-size: 10px;
+        }
+        .top-container label {
+            display: none;
+        }
+        .nav-bar {
+            margin-bottom: 10px;
+        }
+        .carousel {
+            /* display: none; */
+            height: 200px;
+        }
+        .container {
+            width: 80%;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 100px;
+        }
+        .film-presnt p {
+            font-weight: normal;
+            font-size: 10px;
+        }
+        .top10 {
+            display: none;
+        }
+        .ending {
+            display: grid;
+            margin: 0;
+            padding: 10px;
+            font-size: 10px;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .footer-header {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            font-size: 10px;
+        }
+        .footer-in4-follow {
+            display: none;
+        }
+        .footer-in4-apps {
+            display: none;
+        }
+        .logo-end {
+            display: none;
+        }
+        .follow-us {
+            display: none;
+        }
+        .download-apps {
+            display: none;
+        }
+        .footer-in4-cinemas {
+            display: none;
+        }
+        .cinemas {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 414px) {
+        body {
+            background: url(https://yesimadesigner.com/wp-content/uploads/2019/06/Thumbnail-movie-poster-design.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .top-container {
+            width: 100%;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 0.5fr));
+        }
+        .logo img {
+            max-width: 70px;
+            max-height: 70px;
+        }
+        .logo p {
+            display: none;
+        }
+        .nav-bar a {
+            font-size: 12px;
+        }
+        .top-container label {
+            display: none;
+        }
+        .nav-bar {
+            margin-bottom: 10px;
+        }
+        .carousel {
+            /* display: none; */
+            height: 200px;
+        }
+        .container {
+            width: 80%;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 100px;
+        }
+        .film-presnt p {
+            font-weight: bold;
+            font-size: 10px;
+        }
+        /* .top10 {
+        display: none;
+    } */
+        .ending {
+            display: grid;
+            margin: 0;
+            padding: 10px;
+            font-size: 10px;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .footer-header {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            font-size: 10px;
+        }
+        .footer-in4-follow {
+            display: none;
+        }
+        .footer-in4-apps {
+            display: none;
+        }
+        .logo-end {
+            display: none;
+        }
+        .follow-us {
+            display: none;
+        }
+        .download-apps {
+            display: none;
+        }
+        .footer-in4-cinemas {
+            display: none;
+        }
+        .cinemas {
+            display: none;
+        }
+        .top10 {
+            background-color: rgba(255, 255, 255, .7);
+            width: 100%;
+            margin: auto;
+            /* position: absolute; */
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px solid var(--main-color-2);
+        }
+        .top10films ol {
+            width: 90%;
+            list-style: decimal;
+            display: grid;
+            grid-template-columns: 180px 180px;
+            /* padding: 30px; */
+            margin: auto;
+            /* display: none */
+        }
+        .top10-align {
+            grid-template-columns: 99% 1%;
+        }
+        .top10-align {
+            display: grid;
+            /* grid-template-columns: 1 1fr; */
+            text-align: unset;
+            text-transform: capitalize;
+            font-size: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .top10-align a {
+            display: none;
+        }
+    }

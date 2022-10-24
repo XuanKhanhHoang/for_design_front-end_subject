@@ -1,0 +1,126 @@
+.divI {
+	height: 44px;
+	width: 380px;
+	color: #fff;
+	margin-left: 100px;
+	padding-left: 140px;
+	padding-top: 15px;
+	background-color: #F26B38;
+}
+
+#tenfilm {
+	border: 2px solid gray;
+	height: 100px;
+	width: 380px;
+	display: flex;
+	align-items: center;
+	color: black;
+	margin-left: 100px;
+	padding-left: 25px;
+	gap: 15px;
+	justify-content: space-between;
+}
+.div2{
+	border: 2px solid gray;
+	height: 100px;
+	width: 380px;
+	display: flex;
+	align-items: center;
+	color: black;
+	margin-left: 100px;
+	padding-left: 25px;
+	gap: 15px;
+	justify-content: space-between;
+}
+.content {
+	display: flex;
+	gap: 15px;
+}
+
+.div p {
+	font-size: 15px;
+}
+.img {
+	width: 60px;
+	object-fit: contain;
+}
+
+body {
+	background: white;
+}
+
+.up {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.c {
+	width: 30px;
+	background-color: #F26B38;
+	margin-right: 20px;
+}
+
+.all {
+	display: inline-flex;
+	padding: 50px 0;
+}
+.suat
+{
+	display: inline-block;
+}
+.ng
+{
+	border: 2px solid gray;
+	width: 380px;
+	height: 120px;
+	margin-left: 100px;
+	padding-left: 25px;
+	padding-top: 30px;
+}
+.suat{
+	display: flex;
+}
+.gio
+{
+	border: 1px solid black;
+	margin-left: 20px;
+}
+#tenfilm:hover,.div2:hover
+{
+	cursor: pointer;
+}
+
+.gio{
+	cursor: pointer;
+}
+.selection{
+	display: none;
+}
+.p1-1,.p1-2,.p1-3,.p1-4,.p1-5{
+	display: none;
+}
+.active{
+	display: block;
+}
+.active2{
+	display: block;
+}
+.content p:hover
+{
+	color:#F26B38
+}
+@media only screen and (max-width: 63.9375em)
+{
+	.all {
+		width: 100%;
+		display: block;
+	}
+	.div {
+		width: 100%;
+	}
+	.divI{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+}

@@ -1,0 +1,41 @@
+.container {
+    padding: 30px;
+    display: grid;
+    /* justify-content: center; */
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 300px;
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid var(--main-color-2);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.film-presnt img {
+    max-width: 90%;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.film-presnt {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.film-presnt p {
+    color: var(--main-color-2);
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.film-presnt img:hover {
+    border: 1px solid var(--main-color);
+    transition: 200ms opacity ease-in-out;
+    opacity: .8;
+}

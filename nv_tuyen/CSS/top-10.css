@@ -1,0 +1,64 @@
+.top10 {
+    background-color: rgba(255, 255, 255, .7);
+    width: 90%;
+    margin: auto;
+    /* position: absolute; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid var(--main-color-2);
+    font-size: 15px;
+}
+
+.top10films ol {
+    width: 80%;
+    list-style: decimal;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px;
+    margin: auto;
+}
+
+.top10films li {
+    color: var(--main-color-2);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.top10 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid var(--main-color-2);
+    color: var(--main-color);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    text-shadow: 0 0 1px var(--main-color), 0 0 2px var(--main-color), 0 0 3px var(--main-color);
+    letter-spacing: 5px;
+}
+
+.top10-align {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.top10-align a {
+    position: relative;
+    text-transform: uppercase;
+    border: 1px solid var(--main-color);
+    width: 100px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--back-color);
+    text-decoration: none;
+    font-size: 15px;
+    right: -200px;
+}
+
+.top10-align a:hover {
+    opacity: .8;
+}
