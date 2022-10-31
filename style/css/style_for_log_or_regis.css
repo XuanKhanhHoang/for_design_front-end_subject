@@ -47,13 +47,13 @@
   margin-bottom: 1rem;
 }
 .log-img {
-  background-image: url(/resouces/img/ads-login.png);
+  background-image: url(../../resouces/img/ads-login.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .log-btn {
-  background-image: url(/resouces/img/login-img.bmp);
+  background-image: url(../../resouces/img/login-img.bmp);
   background-size: contain;
   width: 20%;
   background-position: center;

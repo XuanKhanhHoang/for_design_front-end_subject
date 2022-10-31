@@ -46,14 +46,6 @@
     window.open(e);
   }
 }
-// //date picker
-// {
-//   let startDate = document.getElementById("bornDate");
-//   startDate.addEventListener("change", (e) => {
-//     let startDateVal = e.target.value;
-//     document.getElementById("startDateSelected").innerText = startDateVal;
-//   });
-// }
 
 //animate
 function hiddent() {
@@ -190,7 +182,7 @@ var user_using;
 
 function Login() {
   var userArray = JSON.parse(localStorage.getItem("user_info")) || [];
-  $.getJSON("/data/user.json", function (data) {
+  $.getJSON("./data/user.json", function (data) {
     $(".hid_background").addClass("show-background");
     $(".success_login").addClass("show-background");
     var k = false;
