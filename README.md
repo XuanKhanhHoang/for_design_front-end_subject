@@ -10,9 +10,6 @@ A project for Design Front-end Web Subject
 	data : Add to data folder
 	html file: Add to outside
 	
-// A note about using file:
-
-	responsive horizontal should be write to : style/css/responsive.css
 	
 //Essential js var :
 
