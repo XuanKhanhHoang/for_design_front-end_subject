@@ -14,3 +14,6 @@ A project for Design Front-end Web Subject
 //Essential js var :
 
 	user_using: Its value is user logging
+
+//Compulsory function:
+ 	on tag "body": onload="check_userusing()"
