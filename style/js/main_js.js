@@ -234,8 +234,10 @@ function RememberMe() {
   if (rm.prop("checked")) {
     var user = $("#email").val();
     var pwd = $("#pwd").val();
-    Cookies.set("user", user);
-    Cookies.set("password", pwd);
+    var date = new Date();
+    date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
+    Cookies.set("user", user, { expires: date });
+    Cookies.set("password", pwd, { expires: date });
   }
 }
 
