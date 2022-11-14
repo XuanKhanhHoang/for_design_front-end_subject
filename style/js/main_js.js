@@ -30,7 +30,6 @@
         .getElementsByClassName("sm-menu")[0]
         .classList.remove("showing-background");
     }
-    setInterval(setmenu(a, b), 50);
   }
   function check_userusing() {
     if (sessionStorage.getItem("user-using") != undefined) {
