@@ -92,6 +92,8 @@
 .menu-list-md_sm-appear {
   transition: visibility 0s, opacity 0.5s linear;
   visibility: visible;
+ height: auto !important;
+ opacity: 1 !important;
 }
 .menu-list-md_sm-disapppear {
   transition: height 0s, opacity 0s;
