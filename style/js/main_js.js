@@ -1,4 +1,4 @@
-//All is wrote by HoangXuanKhanh
+//All is written by HoangXuanKhanh
 
 //js for header
 {
