@@ -156,6 +156,7 @@ function validateRePassword() {
     $(".invalid-feedback-regis-re_password").removeClass("show");
   } else {
     $(".invalid-feedback-regis-re_password").addClass("show");
+    res_valid=true;
   }
   console.log(res_valid);
 }
