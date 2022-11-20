@@ -73,6 +73,7 @@ function appearLogin() {
   }
 }
 function resgis() {
+  res_valid=false;
   $.Callbacks().add(validateName());
   if (res_valid == false) {
     $(".nofi-regis-text").text(`Chào mừng
@@ -126,53 +127,47 @@ function validatePassword() {
 function validateResEmail() {
   var re = /^\S+@\S+\.\S+$/;
   var v = $("#res_email").val();
-  console.log(res_valid);
   if (re.test(v) == false) {
     $(".invalid-feedback-res-email").addClass("show");
     res_valid = true;
     //return false;
   } else {
     $(".invalid-feedback-res-email").removeClass("show");
-    res_valid = false;
   }
+  console.log(res_valid);
   $.Callbacks().add(validateResPassword());
 }
 function validateName() {
-  console.log(res_valid);
   if ($("#name").val().length == 0) {
     $(".invalid-feedback-regis-name").addClass("show");
     res_valid = true;
     // return false;
   } else {
     $(".invalid-feedback-regis-name").removeClass("show");
-    res_valid = false;
   }
+  console.log(res_valid);
   $.Callbacks().add(validateResEmail());
 }
 function validateRePassword() {
-  console.log(res_valid);
-
   if (
     $("#res_pwd").val() == $("#re_pwd").val() &&
     `${$("#re_pwd").val()}` !== ""
   ) {
     $(".invalid-feedback-regis-re_password").removeClass("show");
-    res_valid = false;
   } else {
     $(".invalid-feedback-regis-re_password").addClass("show");
-    res_valid = true;
   }
+  console.log(res_valid);
 }
 function validateResPassword() {
-  console.log(res_valid);
   if ($("#res_pwd").val().length == 0) {
     $(".invalid-feedback-res_password").addClass("show");
     res_valid = true;
     // return false;
   } else {
     $(".invalid-feedback-res_password").removeClass("show");
-    res_valid = false;
   }
+  console.log(res_valid);
   $.Callbacks().add(validateRePassword());
 }
 
