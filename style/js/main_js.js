@@ -1,4 +1,4 @@
-//All is wrote by HoangXuanKhanh
+//All is written by HoangXuanKhanh
 
 //js for header
 {
@@ -30,7 +30,6 @@
         .getElementsByClassName("sm-menu")[0]
         .classList.remove("showing-background");
     }
-    setInterval(setmenu(a, b), 50);
   }
   function check_userusing() {
     if (sessionStorage.getItem("user-using") != undefined) {
@@ -74,6 +73,7 @@ function appearLogin() {
   }
 }
 function resgis() {
+  res_valid=false;
   $.Callbacks().add(validateName());
   if (res_valid == false) {
     $(".nofi-regis-text").text(`Chào mừng
@@ -127,53 +127,48 @@ function validatePassword() {
 function validateResEmail() {
   var re = /^\S+@\S+\.\S+$/;
   var v = $("#res_email").val();
-  console.log(res_valid);
   if (re.test(v) == false) {
     $(".invalid-feedback-res-email").addClass("show");
     res_valid = true;
     //return false;
   } else {
     $(".invalid-feedback-res-email").removeClass("show");
-    res_valid = false;
   }
+  console.log(res_valid);
   $.Callbacks().add(validateResPassword());
 }
 function validateName() {
-  console.log(res_valid);
   if ($("#name").val().length == 0) {
     $(".invalid-feedback-regis-name").addClass("show");
     res_valid = true;
     // return false;
   } else {
     $(".invalid-feedback-regis-name").removeClass("show");
-    res_valid = false;
   }
+  console.log(res_valid);
   $.Callbacks().add(validateResEmail());
 }
 function validateRePassword() {
-  console.log(res_valid);
-
   if (
     $("#res_pwd").val() == $("#re_pwd").val() &&
     `${$("#re_pwd").val()}` !== ""
   ) {
     $(".invalid-feedback-regis-re_password").removeClass("show");
-    res_valid = false;
   } else {
     $(".invalid-feedback-regis-re_password").addClass("show");
-    res_valid = true;
+    res_valid=true;
   }
+  console.log(res_valid);
 }
 function validateResPassword() {
-  console.log(res_valid);
   if ($("#res_pwd").val().length == 0) {
     $(".invalid-feedback-res_password").addClass("show");
     res_valid = true;
     // return false;
   } else {
     $(".invalid-feedback-res_password").removeClass("show");
-    res_valid = false;
   }
+  console.log(res_valid);
   $.Callbacks().add(validateRePassword());
 }
 
@@ -234,8 +229,10 @@ function RememberMe() {
   if (rm.prop("checked")) {
     var user = $("#email").val();
     var pwd = $("#pwd").val();
-    Cookies.set("user", user);
-    Cookies.set("password", pwd);
+    var date = new Date();
+    date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
+    Cookies.set("user", user, { expires: date });
+    Cookies.set("password", pwd, { expires: date });
   }
 }
 
